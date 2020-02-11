@@ -1,0 +1,9 @@
+:Base TourMan
+:Title Менеджер турів
+1 Робота з замовленнями
+2 Список замовлень=OrderBrowser
+:Include TourMan.cfh
+:include TourVisa.cnt
+:Include CurrRead.cnt
+:include Dictionl.cnt
+;OH :Index Менеджер турів=TourMan.hlp

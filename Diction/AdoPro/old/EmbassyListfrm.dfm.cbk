@@ -1,0 +1,73 @@
+object EmbassyListForm: TEmbassyListForm
+  Left = 1213
+  Top = 278
+  Width = 499
+  Height = 240
+  Caption = 'EmbassyListForm'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = True
+  PixelsPerInch = 96
+  TextHeight = 13
+  object EmbassyCheckListBox: TCheckListBox
+    Tag = 4
+    Left = 0
+    Top = 0
+    Width = 483
+    Height = 202
+    Align = alClient
+    Color = clInfoBk
+    ItemHeight = 13
+    TabOrder = 0
+  end
+  object EmbassyListQry: TIBQuery
+    SQL.Strings = (
+      
+        'select distinct Co.CompanyId, Co.Name || '#39', '#39' || Ci.Name as Emba' +
+        'ssyName, E.EmbassyID'
+      '  from Companies Co'
+      
+        '  left join  CntrEmbassies E on   E.EmbassyId = Co.CompanyId and' +
+        ' E.OurEmbassy = :OurEmbassy and E.CountryId = :EmbassCntrId,'
+      '       CompOffices O, Cities Ci'
+      ' where Co.AsAmbas = '#39'T'#39
+      '   and O.CompanyId = Co.CompanyId and O.CountryId = :CountryId'
+      '   and Ci.CityId = O.CityId'
+      '   and E.ParentId is null'
+      ' order by Co.Name, Ci.Name')
+    Left = 68
+    Top = 113
+    ParamData = <
+      item
+        DataType = ftUnknown
+        Name = 'OurEmbassy'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftUnknown
+        Name = 'EmbassCntrId'
+        ParamType = ptUnknown
+      end
+      item
+        DataType = ftUnknown
+        Name = 'CountryId'
+        ParamType = ptUnknown
+      end>
+    object EmbassyListQryCOMPANYID: TIntegerField
+      FieldName = 'COMPANYID'
+    end
+    object EmbassyListQryEMBASSYID: TIntegerField
+      FieldName = 'EMBASSYID'
+    end
+    object EmbassyListQryEMBASSYNAME: TIBStringField
+      DisplayLabel = #1055#1088#1077#1076#1089#1090#1072#1074#1085#1080#1094#1090#1074#1086
+      FieldName = 'EMBASSYNAME'
+      ProviderFlags = []
+      Size = 292
+    end
+  end
+end

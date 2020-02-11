@@ -1,0 +1,2 @@
+select * from COUNTRIES_HOLIDAYS
+where ID_COUNTRIES = :COUNTRYID

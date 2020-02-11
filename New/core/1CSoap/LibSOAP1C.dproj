@@ -1,0 +1,143 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{B77CFEDF-A29C-43E9-A6E8-9694303D8B1E}</ProjectGuid>
+			<MainSource>LibSOAP1C.dpr</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<ProjectVersion>12.0</ProjectVersion>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_UsePackage>vcl;rtl;vclx;dbrtl;vcldb;bdertl;vcldbx;visualclx;visualdbclx;vclactnband;vclshlctrls;vclie;xmlrtl;inet;inetdbbde;inetdbxpress;webdsnap;dsnap;soaprtl;websnap;adortl;dbexpress;dsnapcon;dbxcds;ibxpress;teeui;teedb;tee;dss;indy;VclSmp;qrpt;teeqr;Rave50CLX;Rave50VCL;IntrawebDB_50_70;Intraweb_50_70;VclNewlyext;dxCoreD7;dxGDIPlusD7;cxLibraryD7;cxEditorsD7;dxmdsD7;dxBarD7;dxBarDBNavD7;dxRibbonD7;cxBarEditItemD7;dxtrmdD7;dxDockingD7;dxThemeD7;dxFlowChartD7;cxPageControlD7;dxComnD7;cxPageControldxBarPopupMenuD7;dxTabbedMDID7;dxLayoutControlD7;dxNavBarD7;dxorgcD7;dxdborD7;cxGridD7;cxPivotGridD7;cxPivotGridChartD7;cxPivotGridOLAPD7;cxTreeListD7;cxTreeListdxBarPopupMenuD7;cxSchedulerD7;cxSchedulerGridD7;dcldxSkinsCoreD7;dxSkinsCoreD7;dxSkinscxPCPainterD7;dxSkinscxSchedulerPainterD7;dxSkinsdxDLPainterD7;dxSkinsdxBarPainterD7;dxSkinsdxNavBarPainterD7;dxSpellCheckerD7;cxSpreadSheetD7;cxVerticalGridD7;dxPSCoreD7;dxPSLnksD7;dxPScxCommonD7;dxPScxExtCommonD7;dxPScxGridLnkD7;dxPSdxLCLnkD7;dxPScxPivotGridLnkD7;dxPScxSchedulerLnkD7;dxPScxSSLnkD7;dxPScxTLLnkD7;dxPScxVGridLnkD7;dxPSTeeChartD7;dxPSDBTeeChartD7;dxPSdxOCLnkD7;dxPSdxDBOCLnkD7;dxPSdxFCLnkD7;dxPScxPCProdD7;dxSkinsdxRibbonPainterD7;dxSkinBlackD7;dxSkinBlueD7;dxSkinCaramelD7;dxSkinCoffeeD7;dxSkinDarkRoomD7;dxSkinDarkSideD7;dxSkinFoggyD7;dxSkinGlassOceansD7;dxSkiniMaginaryD7;dxSkinLilianD7;dxSkinLiquidSkyD7;dxSkinLondonLiquidSkyD7;dxSkinMcSkinD7;dxSkinMoneyTwinsD7;dxSkinOffice2007BlackD7;dxSkinOffice2007BlueD7;dxSkinOffice2007GreenD7;dxSkinOffice2007PinkD7;dxSkinOffice2007SilverD7;dxSkinOffice2010BlackD7;dxSkinOffice2010BlueD7;dxSkinOffice2010SilverD7;dxSkinPumpkinD7;dxSkinSevenD7;dxSkinSharpD7;dxSkinSilverD7;dxSkinSpringTimeD7;dxSkinStardustD7;dxSkinSummer2008D7;dxSkinValentineD7;dxSkinXmas2008BlueD7;dxSkinBlueprintD7;dxSkinDevExpressDarkStyleD7;dxSkinDevExpressStyleD7;dxSkinHighContrastD7;dxSkinSevenClassicD7;dxSkinSharpPlusD7;dxSkinTheAsphaltWorldD7;dxSkinVS2010D7;dxSkinWhiteprintD7;AzCtrls;CalkGridPack;SymantecCtrls;WinFaxComp;SvtComponentPack;TMSD7;NewDropD7;EhLib70;DHTML;AcqrImage;TreeviewWithCheckes;Timeliner_pack;MemoSyntaxColor;inetdb</DCC_UsePackage>
+			<DCC_UNSAFE_TYPE>true</DCC_UNSAFE_TYPE>
+			<DCC_UNSAFE_CODE>true</DCC_UNSAFE_CODE>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;WinTypes=Windows;WinProcs=Windows;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_Platform>x86</DCC_Platform>
+			<DCC_DependencyCheckOutputName>LibSOAP1C.dll</DCC_DependencyCheckOutputName>
+			<DCC_UNSAFE_CAST>true</DCC_UNSAFE_CAST>
+			<DCC_N>true</DCC_N>
+			<DCC_S>false</DCC_S>
+			<GenDll>true</GenDll>
+			<DCC_K>false</DCC_K>
+			<DCC_SymbolReferenceInfo>1</DCC_SymbolReferenceInfo>
+			<DCC_E>false</DCC_E>
+			<DCC_F>false</DCC_F>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="LibSOAP1C.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="UnitTourSoup.pas"/>
+			<DCCReference Include="..\UnitProc.pas"/>
+			<DCCReference Include="..\..\..\LIntf\TourCmnlIf.pas"/>
+			<DCCReference Include="..\frmCompareDataGrid.pas">
+				<Form>FrmCompareData</Form>
+			</DCCReference>
+			<DCCReference Include="..\frmMergeLogSoap.pas">
+				<Form>frmMergeSoap</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\OptSet.pas"/>
+			<DCCReference Include="..\FrmProgress.pas">
+				<Form>FormProgres</Form>
+			</DCCReference>
+			<DCCReference Include="..\UnitIBQuery.pas"/>
+			<DCCReference Include="..\UnitCompareDataGrid.pas"/>
+			<DCCReference Include="UnitSoap1C.pas"/>
+			<DCCReference Include="..\..\..\LIntf\InptHistDlg.pas">
+				<Form>InputHistoryDlg</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\..\LIntf\TourFiles.pas"/>
+			<DCCReference Include="..\ExtStream.pas"/>
+			<DCCReference Include="..\..\..\LIntf\TourConsts.pas"/>
+			<DCCReference Include="..\core.pas"/>
+			<DCCReference Include="..\UnitEditText.pas">
+				<Form>FrmEditText</Form>
+			</DCCReference>
+			<DCCReference Include="..\WEBSoap\UnitWebSoap.pas"/>
+			<DCCReference Include="..\WEBSoap\UnitFunctWebSoap.pas"/>
+			<DCCReference Include="..\WEBSoap\UnitStructrureWebSoap.pas"/>
+			<DCCReference Include="..\UnitInputData.pas">
+				<Form>FrmInputData</Form>
+			</DCCReference>
+			<DCCReference Include="..\LOG\UnitFunctLog.pas"/>
+			<DCCReference Include="..\MySimpleShareMem.pas"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">LibSOAP1C.dpr</Source>
+					</Source>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1058</VersionInfo>
+						<VersionInfo Name="CodePage">1251</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+				</Delphi.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

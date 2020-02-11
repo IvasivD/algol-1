@@ -1,0 +1,1 @@
+"\\ALFA\C$\Program Files\Firebird\Firebird_1_5\bin\gsec" -user SYSDBA -password masterkey -database "Alfa:C:\Program Files\Firebird\Firebird_1_5\security.fdb" -add Acid -pw acid123 -fname Oleh -lname Fedak

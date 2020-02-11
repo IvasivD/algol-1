@@ -1,0 +1,10 @@
+Microsoft HTML Help Compiler 4.73.8198
+
+Compiling d:\Tomoye\New\Help\HH\Insure\TourInsr.chm
+
+TourInsr.hhc
+HHC6000: Error: An error occurred attempting to create an internal file. Make certain there is enough disk space on the drive where you are compiling your file.
+HHC5007: Error: Fatal Navigational Compilation Error. This is likely the result of an invalid .HHC file.
+
+
+The following files were not compiled:

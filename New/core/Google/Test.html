@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script type="text/javascript">
+        var languageFrom = "en";
+        var languageTo = "ru";
+        var texts = "[\"The answer lies in machine translation.\", \"Simply copy and paste a code snippet anywhere\", \"the best machine translation technology cannot always provide translations tailored to a site or users like a human\"]";
+        var options = "{\"User\":\"TestUserId\"}";
+       
+        function OnSucceeded(result, usercontext, methodName) {
+
+            window.mycallback = function (response) {
+                var array = response;
+                var translations = "Translation output for given array <br />";
+                for (var i = 0; i < array.length; i++) {
+                    translations = translations + array[i].TranslatedText + "<br />";
+                }
+                document.getElementById('lblResult').innerHTML = translations;
+            }
+
+            var s = document.createElement("script");
+            s.src = "http://api.microsofttranslator.com/V2/Ajax.svc/TranslateArray?oncomplete=mycallback&appId=Bearer " + encodeURIComponent(result.access_token) + "&from=" + languageFrom +
+            "&to=" + languageTo + "&texts=" + texts + "&options=" + options;
+            alert(s.src);
+			document.getElementsByTagName("head")[0].appendChild(s);
+        }
+        function OnFailed(error, userContext, methodName) {
+            alert("Error");
+        }
+		
+		function translateArray() {
+            alert('1');
+			GetAccessToken(OnSucceeded, OnFailed);
+
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+       <script>translateArray();alert('Afrer');</script>       
+	   
+        <div ID="lblResult" runat="server"></div>
+    </div>
+    </form>
+</body>
+</html>

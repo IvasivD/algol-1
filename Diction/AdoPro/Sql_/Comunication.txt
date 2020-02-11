@@ -1,0 +1,41 @@
+  insert into COMUNICATION_COMPANY ( ID_COMPANY, ID_COMUNICATION_TYPE, AVALUE, OLD_ID )
+  select compoffices.companyid, 1,
+   case
+    when ( (substr(COMPPHONES.cntrycode, strlen(COMPPHONES.cntrycode), strlen(COMPPHONES.cntrycode) ) = '0') and (substr(COMPPHONES.areacode, 1, 1) = '0') ) then '+'||COMPPHONES.cntrycode ||'('|| substr(COMPPHONES.areacode, 2, strlen(COMPPHONES.cntrycode) ) ||')'|| COMPPHONES.phoneno
+    else '+'||COMPPHONES.cntrycode ||'('|| COMPPHONES.areacode||')'|| COMPPHONES.phoneno
+  end, COMPPHONES.phoneid
+  from COMPPHONES left join compoffices on compoffices.officeid = COMPPHONES.officeid where COMPPHONES.isFax is null or COMPPHONES.isFax = 'F' 
+  
+  
+  insert into COMUNICATION_COMPANY ( ID_COMPANY, ID_COMUNICATION_TYPE, AVALUE, OLD_ID )
+  select compoffices.companyid, 7,
+   case
+    when ( (substr(COMPPHONES.cntrycode, strlen(COMPPHONES.cntrycode), strlen(COMPPHONES.cntrycode) ) = '0') and (substr(COMPPHONES.areacode, 1, 1) = '0') ) then '+'||COMPPHONES.cntrycode ||'('|| substr(COMPPHONES.areacode, 2, strlen(COMPPHONES.cntrycode) ) ||')'|| COMPPHONES.phoneno
+    else '+'||COMPPHONES.cntrycode ||'('|| COMPPHONES.areacode||')'|| COMPPHONES.phoneno
+  end , COMPPHONES.phoneid  from COMPPHONES
+  left join compoffices on compoffices.officeid = COMPPHONES.officeid where COMPPHONES.isFax = 'T'
+  
+  
+  UPDATE COMUNICATION_COMP_OFFICE SET COMUNICATION_COMP_OFFICE.isdef = 1
+  where exists (
+
+  select COMUNICATION_COMPANY.id, COMPPHONES.officeid from COMUNICATION_COMPANY
+  left join COMPPHONES on COMPPHONES.phoneid = COMUNICATION_COMPANY.old_id
+  where COMUNICATION_COMPANY.id_comunication_type= 9 and COMPPHONES.isdeffax ='T' and COMPPHONES.officeid is not null
+  and COMUNICATION_COMP_OFFICE.id_comunication_company =  COMUNICATION_COMPANY.id and COMUNICATION_COMP_OFFICE.id_office = COMPPHONES.officeid )
+  
+
+  insert into COMUNICATION_COMPANY ( ID_COMPANY, ID_COMUNICATION_TYPE, AVALUE, NAME, OLD_ID )
+  select compemails.companyid, 3, emails.email, emails.alias, emails.emailid  from compemails
+  left join emails on emails.emailid = compemails.LINKEMAILID
+
+  insert into COMUNICATION_COMPANY ( ID_COMPANY, ID_COMUNICATION_TYPE, AVALUE, OLD_ID )
+  select COMPWEBSITES.companyid, 9,COMPWEBSITES.website, COMPWEBSITES.websiteid from COMPWEBSITES
+  
+  
+  insert into COMUNICATION_PERSON( ID_COMPPERSONS, ID_COMUNICATION_TYPE, AVALUE, NAME  )
+  SELECT PERSONID, 1, HOMEPHONE, FULLNAME from COMPPERSONS where HOMEPHONE is not null and HOMEPHONE <> ''
+
+  insert into COMUNICATION_PERSON( ID_COMPPERSONS, ID_COMUNICATION_TYPE, AVALUE, NAME  )
+  SELECT PERSONID, 1, MOBILHONE, FULLNAME from COMPPERSONS where MOBILHONE is not null and MOBILHONE <> ''
+  

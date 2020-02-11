@@ -1,0 +1,53 @@
+object Form1: TForm1
+  Left = 344
+  Top = 128
+  Width = 660
+  Height = 318
+  Caption = 'Form1'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object cxGrid1: TcxGrid
+    Left = 0
+    Top = 0
+    Width = 644
+    Height = 200
+    Align = alTop
+    TabOrder = 0
+    object cxGrid1DBTableView1: TcxGridDBTableView
+      DataController.DataSource = DM.DataSource1
+      DataController.KeyFieldNames = 'ID'
+      DataController.Summary.DefaultGroupSummaryItems = <>
+      DataController.Summary.FooterSummaryItems = <>
+      DataController.Summary.SummaryGroups = <>
+      OptionsView.GroupByBox = False
+    end
+    object cxGrid1Level1: TcxGridLevel
+      GridView = cxGrid1DBTableView1
+    end
+  end
+  object Button1: TButton
+    Left = 10
+    Top = 247
+    Width = 75
+    Height = 25
+    Caption = 'ADD'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 150
+    Top = 237
+    Width = 75
+    Height = 25
+    Caption = 'Edit'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+end

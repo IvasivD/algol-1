@@ -1,0 +1,9 @@
+:Base TourMan
+:Title Менеджер турів
+1 Довідники
+2 Країни і міста
+3 Шаблон анкети=DictCountryAnketTemplate
+2 Реквізити партнерів
+3 Реквізити партнерів=DictCompanyBrowseForm
+3 Вікно "Фірма - Редагувати"=DictCompanyEditForm
+3 Вікно "Адреса - Редагувати"=DictAddressEditForm

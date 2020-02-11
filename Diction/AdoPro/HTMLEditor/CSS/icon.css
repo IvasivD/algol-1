@@ -1,0 +1,109 @@
+.iconNew {
+  width : 45px;
+  height: 21px;	
+  border: none;
+  pointer-events: none;  
+  background:url('icon/new.png') no-repeat;
+  content:'Нове';
+}
+
+.iconPromotion {
+  width : 64px;
+  height: 34px;
+  border: none;
+  pointer-events: none; 
+  background:url('icon/promotion.png') no-repeat;
+  content:'Акція';
+}
+
+.iconPricedown {
+  width : 9px;
+  height: 11px;
+  /*padding-top:5px;*/
+  border: none;  
+  pointer-events: none; 
+  background:url('icon/pricedown.png') no-repeat;
+  content:'Ціну знижено';
+}
+
+.iconPriceup {
+  width : 9px;
+  height: 11px;
+  /*padding-top:5px;*/
+  border: none;
+  pointer-events: none; 
+  background:url('icon/priceup.png') no-repeat;
+  content:'Ціну збільшено';
+}
+
+.iconPresent {
+  width : 20px;
+  height: 19px;
+  border: none;
+  pointer-events: none; 
+  background:url('icon/present.png') no-repeat;
+  content:'Подарунок';
+}
+
+.iconInfo {
+  width : 24px;
+  height: 23px;
+  border: none;
+  pointer-events: none; 
+  background:url('icon/info.png') no-repeat;
+  content:'Інформація';
+}
+
+.iconAttention {
+  width : 22px;
+  height: 22px;
+  border: none;
+  pointer-events: none;   
+  background:url('icon/attention.png') no-repeat;
+  content:'Увага';
+}
+
+.iconQuestion {
+   width : 24px;
+   height: 24px;
+   border: none;
+   pointer-events: none; 
+   background:url('icon/question.png') no-repeat;
+   content:'Запитання'; 
+}
+
+.iconNolimit {
+  width : 26px;
+  height: 26px;
+  border: none;  
+  pointer-events: none;  
+  background:url('icon/nolimit.png') no-repeat;
+  content:'Без обмежень';
+}
+
+.iconRecomended {
+  width : 24px;
+  height: 24px;
+  border: none;  
+  pointer-events: none;
+  background:url('icon/recomended.png') no-repeat;
+  content:'Рекомендуємо';
+}
+
+.iconCulturalheritage {
+  width : 24px;
+  height: 23px;
+  border: none;
+  pointer-events: none;   
+  background:url('icon/culturalheritage.png') no-repeat;
+  content:'Культурна спадщина';
+}
+
+.iconHit {
+  width : 21px;
+  height: 30px;
+  border: none;
+  pointer-events: none;   
+  background:url('icon/hit.png') no-repeat;
+  content:'Хіт';
+}

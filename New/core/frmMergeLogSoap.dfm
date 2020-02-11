@@ -1,0 +1,4573 @@
+object frmMergeSoap: TfrmMergeSoap
+  Left = 446
+  Top = 72
+  Width = 1169
+  Height = 923
+  Caption = #1046#1091#1088#1085#1072#1083' '#1089#1080#1085#1093#1088#1086#1085#1110#1079#1072#1094#1110#1111
+  Color = clBtnFace
+  Constraints.MinHeight = 300
+  Constraints.MinWidth = 1169
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PanelBottomRight: TPanel
+    Left = 0
+    Top = 852
+    Width = 1153
+    Height = 33
+    Align = alBottom
+    TabOrder = 0
+    DesignSize = (
+      1153
+      33)
+    object CloseBtn: TBitBtn
+      Left = 1055
+      Top = 4
+      Width = 88
+      Height = 25
+      Anchors = [akTop, akRight]
+      Caption = #1047'&'#1072#1082#1088#1080#1090#1080
+      ModalResult = 1
+      TabOrder = 0
+      OnClick = CloseBtnClick
+      Glyph.Data = {
+        F6000000424DF600000000000000760000002800000010000000100000000100
+        04000000000080000000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
+        5555000050000005555544F00BFBFBF0555544F0BFBF0000055544F0FBFBFBFB
+        F05544F0BFBF0000000544F0F000FBFBF00544F0B0B000000F000000F0F000FB
+        FB0F555500BFBFBFB0F455555500FBFB0F44555555550000F44455555555550F
+        4444555555555550044455555555555550045555555555555550}
+      Margin = 4
+    end
+    object ButSynhronizeAll: TBitBtn
+      Left = 8
+      Top = 5
+      Width = 129
+      Height = 24
+      Caption = #1057#1080#1085#1093#1088#1086#1085#1110#1079#1091#1074#1072#1090#1080
+      TabOrder = 1
+      Glyph.Data = {
+        36030000424D3603000000000000360000002800000010000000100000000100
+        18000000000000030000120B0000120B00000000000000000000FFFFFFFAF7F0
+        EDCF89EFC255EEBC40EEBC3FEEBC3FEEBC3FEEBC3FEEBC3FEEBC3FEEBC40EFC2
+        55EDCF89FAF7F0FFFFFFFCFAF6EBB737EEA800EDA900EDAA00ECA800ECA800ED
+        AA00EDA900EDA900EDA900EDA900EDA900EEA800EBB737FCFAF6EFD699EDA600
+        ECA900ECA900EBA500EDAF13EEB11AECA700ECA900ECA900ECA900ECA900ECA9
+        00ECA900EDA600EED699E9BB49EDA900ECA900EBA300EFB731FCF2DAF1C14AEA
+        A200EBA600EBA600EBA600EBA600ECA900ECA900EDA900E9BB49E5AB19EEAA00
+        ECA702F2C658FEFAF0FFFFFFFBEDCDF9E6BAFAE7BBFAE7BBFAE7BBF8DFA2EDAB
+        06ECA800EEAA00E5AB19E5AB18EDA800EEB426FEFDFAFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFEFBF2EDAC09ECA800EEAA00E5AB18E5AB18EEAA00
+        ECA700F0BD41FCF2DAFFFFFFF9E3B1F6D892F7DA93F6D990F6D88FF5D37FEDAB
+        05ECA800EEAA00E5AB18E5AB18EEAA00ECA900EBA400EDAF17FAEBC6F1BF45EA
+        9F00EBA300ECAA03ECAA05EAA100ECA900ECA900EEAA00E5AB18E5AB18EEAA00
+        ECA900ECA900EBA300ECA700ECAB09EBA400EAA200EFB72BFBF0D6EFB62CEBA3
+        00ECA900EEAA00E5AB18E5AB18EEAA00ECA900EBA700F5D47FF9E1A9F8E1A8F9
+        E2ACF8E1ABFAE7B9FFFFFFFDF8EBF2C455EBA702EEAA00E5AB18E5AB18EEAA00
+        ECA900EBA600FBEFCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFEFB72EEDA700E5AB18E5AB1CEEAA00ECA900EBA700F6D788FAE7B7FAE7B7FA
+        E7B7F9E6B7FBEBC3FFFFFFFEFAF2F2C558EBA701EEAA00E5AB1CEABD4EEDA800
+        ECA900ECA900EBA700EBA600EBA600EBA600EAA200EFB72CFCF1D8F0BA36EBA3
+        00ECA900EDA800EABD4EEFD9A3EDA600ECA900ECA900ECA900ECA900ECA900EC
+        A900ECA800EDAE11EDAE12EBA500ECA900ECA900EDA600EFD8A2FCFBF8EBBB47
+        EEA700EDA900EDAA00EDAA00EDAA00EDAA00EDAA00EDA900EDA800EDAA00EDA9
+        00EEA700EBBB47FCFBF8FFFFFFFCFAF5EED59BEEC35CECBC41ECBB3FECBC40EC
+        BC40ECBC40ECBC40ECBB3FECBC41EEC35DEED59BFCFAF5FFFFFF}
+    end
+  end
+  object MainPageControl: TcxPageControl
+    Left = 0
+    Top = 0
+    Width = 1153
+    Height = 56
+    Align = alTop
+    TabOrder = 1
+    Properties.ActivePage = TabAdmin
+    ClientRectBottom = 52
+    ClientRectLeft = 4
+    ClientRectRight = 1149
+    ClientRectTop = 24
+    object TabUser: TcxTabSheet
+      Caption = ' '#1050#1086#1088#1080#1089#1090#1091#1074#1072#1095#1072
+      ImageIndex = 0
+      object PanelTopClient: TPanel
+        Left = 0
+        Top = 0
+        Width = 1145
+        Height = 29
+        Align = alTop
+        TabOrder = 0
+        object ButRefresh: TSpeedButton
+          Left = 8
+          Top = 2
+          Width = 24
+          Height = 24
+          Glyph.Data = {
+            36030000424D3603000000000000360000002800000010000000100000000100
+            18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFBAACA4F5F5F5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCAC4C0E67F3AD7D4D2FF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFF6F6F6C57B4EEE843CB9855FB78F70B89477B6A596DDDCDBFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB39584EC8645E18241F08F46FC
+            9E4FFFAF5AFFBC65EFAE65B8ABA0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            CAC3C0E98043E28143E38848E8914EDC9459CE9666D59D67F6B768FFCF76B7A9
+            9CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3CFCDBA8668E18348EF8D4BF19652BF
+            B6B1FFFFFFFCFCFCE0DEDDBFA891F2B26ED1CFCDFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFD2CECCB89178EF9352B49C8BFFFFFFFFFFFFFFFFFFFFFFFFCDC8
+            C3BAACA1E6E5E5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD7D4D2C1
+            B7B0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBFBFBFDFDFDFFFFFFFFFFFFFFFFFF
+            FDFDFDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC8C0BCC9C4C1FFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC4BCB8B7ACA6FFFFFFFFFFFFFFFFFFFF
+            FFFFC2B5ADEB853EB48666C6C0BCFCFCFCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            ECECECC67046A87E69D3D0CEF8F8F8FFFFFFD8D5D3E07B38EF873FE7853FBB81
+            59C2B9B4F0F0F0FFFFFFFFFFFFFFFFFFFFFFFFC5BDB9E77841D36730B66C45B4
+            714DC36D3CDA702FDC7533E07B37F98E44B8A99EF4F4F4FFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFC5BDB9CB7A51EC7C41EB783AE77636E27435D97132E77B38B786
+            69FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBEBEBB9A9A1B4
+            8D78B7886EB8886AE27C42D47F4DDFDEDDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1F0F0DA7E4BB6A69DFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFBCAFA8F7F7F7FFFFFFFFFFFFFFFFFFFFFFFF}
+          OnClick = ButRefreshClick
+        end
+        object ButSelfMergeLog: TSpeedButton
+          Left = 40
+          Top = 2
+          Width = 57
+          Height = 24
+          AllowAllUp = True
+          GroupIndex = 1
+          Down = True
+          Caption = #1042#1072#1096
+          Glyph.Data = {
+            36030000424D3603000000000000360000002800000010000000100000000100
+            1800000000000003000000000000000000000000000000000000F4EEE9E0CFC4
+            B68967A3683199590A945102945101945002944F0298550AA06321AE7C4EBB94
+            77D5BFB2EEE4DCFFFFFFAE7E3BBC8F1ED9A705DFAF02EABF03EABE03EABE03EA
+            BE03EABE03EBC003E5B602DBAB02D09D02BF88029F621EFFFFFFB3833CDBC13D
+            F0D006DDB500D9AE02D9AE02DAB002D9AF01D9AC01DAAF01DBAF02DDB302E3BA
+            02EAC3029E631CFFFFFFB58A55CAAA3CF7EE29E2C500DBB701DBB700DBB701DB
+            B701DBB901DBB801DBB801DBB701E0C001CFA700AF7D3DFFFFFFDFCAB5B4813C
+            FAF661EEE200E1CC00DBC300DDC300DFC500DDC200DAC200DAC300DCC300E5D7
+            00B27B00DFCAB2FFFFFFFFFFFFE3CEB8CBA833FAFF5EEBE500F0DC00EBD600E1
+            D000EBD900F4DD00DBD000E3DE00CFB000CBA36BFFFFFFFFFFFFFFFFFFFFFFFF
+            DCC29BD4B73FFFFF3DBEBB0A5E87680067C8286F7FA9A715F6E400CDB200C89C
+            4CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5E3CCAB924A2482FF1580FF20
+            8BFF0974FF0056F5777229F2CA89FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFF4B89F249B8FF1C9BFC259DFC28A6FF28A4FF5386BEFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6DBEFF39AFFE27A3F92C
+            A6FB30A7FC35B8FF2489EADBDCF3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFF90E1FF79E9FF63CAFF4ABBFD46BAFA49C6FF3FA3E0C6CCDCFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF515C61609AB981D9FE87
+            E4FF78CFFF86F3FF72B9C6AAA1A1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFE6E6E62014101B090022121388DEE7A4FFFF92EEFF33353C979290FFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFEEEE302C2B302C2B20100C4A
+            5B5A5E80843435341D0F0B9D9B9BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFF4D474737323136312F2C1E1E251311291C1A322C2CD0CFCFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2F2F256504F3A36344A
+            444474706F595754C1BFBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+          OnClick = ButRefreshClick
+        end
+        object ButAllMergeLog: TSpeedButton
+          Left = 98
+          Top = 2
+          Width = 73
+          Height = 24
+          AllowAllUp = True
+          GroupIndex = 1
+          Caption = #1055#1086' '#1074#1089#1110#1093
+          Glyph.Data = {
+            36030000424D3603000000000000360000002800000010000000100000000100
+            1800000000000003000000000000000000000000000000000000FFFFFFFFFFFF
+            FFFFFFFFFFFFD2D1F23D39C83836CF3B39DD3C39E13937D53D3BD27471D6EBEB
+            FBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8A88E02020E51113E816
+            17EB1717EE1617EA1517E81517DF9595EBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFF6865E2475DFF192FFD1D2CFB121AFA2030FD243AFE1232FF9386
+            D2FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA49AFF6A86FF2644F93E
+            6EFA7DD7FF365FFA3457FA0320FFA26960D9984BC68E5FE9D2C1FFFFFFDDE5DB
+            D1DACBD8E4D6B6BAE35F5BE46A90FF50C1FD5ACBEA4AB0FA2B4CFF5139CCFFB8
+            11E6AA33E7AB34D1892C70A67031AA463DB55740C65441D230081D6821379347
+            A6F3208AEB1B69D60000807F684FFFCC4AE5B455EFC45CD99C4371C58243E77E
+            3EDA7042D87447EB741B656A21388D52D7FF31C7FF3DCAFF001754B39061FFE1
+            62FFD66DEFCA75E9C28D8FBE926BEAB026D1703AD87340EF6F22A3735172BBB0
+            FFFF7DE2FF7DF3FF20429265A5DF3E8BE6BEA88DFFD355FFFDF9E5F1E684D69A
+            57E4A229BB9633C2A01C85832D4CAACDFFFF9BE4F61A3B8E0E2E8C1CA5FF1BBA
+            FF1591FDFFFFFFFFFFFFFFFFFFE3F2E46CB1D54BAAFF2991FF257BE00E299336
+            66B62656A80A258C2558B863DBFF47CAFF51DFFFB9CEF2FFFFFFFFFFFFFFFFFF
+            7CCCFF3CC8FF32C3FF3DCCFF3B72CF3453B54869BF2549AB405B81A3EDF1B3FF
+            FFAAFDFF9C968FFFFFFFFFFFFFFFFFFF93CCE397FAFF81E2FF87F9FF88B4DAFF
+            FFFFFFFFFFB0B4BF3A1D0344474C93D1D85362687F7573FFFFFFFFFFFFFFFFFF
+            2F1D153E3732B1FFFFA1E2EA58493BFFFFFFFFFFFFFBFAFA4F4B48483C393F32
+            303F312CD3D1D1FFFFFFFFFFFFFFFFFF4A444140323050595E413B3969605CFF
+            FFFFFFFFFFFFFFFFE2E0E1CBC9C9D2D1D0E3E2E2FFFFFFFFFFFFFFFFFFFFFFFF
+            B6B2B25E5A595D524E5B5250D0CFCEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+          OnClick = ButRefreshClick
+        end
+      end
+    end
+    object TabAdmin: TcxTabSheet
+      Caption = #1040#1076#1084#1110#1085#1110#1089#1090#1088#1072#1090#1086#1088#1072
+      ImageIndex = 1
+      object PanelTopAdmin: TPanel
+        Left = 0
+        Top = 0
+        Width = 1145
+        Height = 29
+        Align = alTop
+        TabOrder = 0
+        object SpeedButton1: TSpeedButton
+          Left = 8
+          Top = 2
+          Width = 24
+          Height = 24
+          Glyph.Data = {
+            36030000424D3603000000000000360000002800000010000000100000000100
+            18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFBAACA4F5F5F5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCAC4C0E67F3AD7D4D2FF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFF6F6F6C57B4EEE843CB9855FB78F70B89477B6A596DDDCDBFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB39584EC8645E18241F08F46FC
+            9E4FFFAF5AFFBC65EFAE65B8ABA0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            CAC3C0E98043E28143E38848E8914EDC9459CE9666D59D67F6B768FFCF76B7A9
+            9CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3CFCDBA8668E18348EF8D4BF19652BF
+            B6B1FFFFFFFCFCFCE0DEDDBFA891F2B26ED1CFCDFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFD2CECCB89178EF9352B49C8BFFFFFFFFFFFFFFFFFFFFFFFFCDC8
+            C3BAACA1E6E5E5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD7D4D2C1
+            B7B0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBFBFBFDFDFDFFFFFFFFFFFFFFFFFF
+            FDFDFDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC8C0BCC9C4C1FFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC4BCB8B7ACA6FFFFFFFFFFFFFFFFFFFF
+            FFFFC2B5ADEB853EB48666C6C0BCFCFCFCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            ECECECC67046A87E69D3D0CEF8F8F8FFFFFFD8D5D3E07B38EF873FE7853FBB81
+            59C2B9B4F0F0F0FFFFFFFFFFFFFFFFFFFFFFFFC5BDB9E77841D36730B66C45B4
+            714DC36D3CDA702FDC7533E07B37F98E44B8A99EF4F4F4FFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFC5BDB9CB7A51EC7C41EB783AE77636E27435D97132E77B38B786
+            69FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBEBEBB9A9A1B4
+            8D78B7886EB8886AE27C42D47F4DDFDEDDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1F0F0DA7E4BB6A69DFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFBCAFA8F7F7F7FFFFFFFFFFFFFFFFFFFFFFFF}
+          OnClick = ButRefreshClick
+        end
+        object ButShowJustSynhronize: TSpeedButton
+          Left = 187
+          Top = 2
+          Width = 118
+          Height = 24
+          AllowAllUp = True
+          GroupIndex = 2
+          Down = True
+          Caption = #1057#1080#1085#1093#1088#1086#1085#1110#1079#1086#1074#1072#1085#1110
+          Glyph.Data = {
+            36030000424D3603000000000000360000002800000010000000100000000100
+            180000000000000300000000000000000000000000000000000086AC86035703
+            03550384AB84E8EFE874A074126312046B07046A07046A07046A07046B07046B
+            07046B074C8A4CFFFFFF0468040FA82D0FA82D057E0F447F44057C0F18C44218
+            C34118C34118C34116BB3D16BB3D16BB3D16BB3D046004FFFFFF046E0B18C345
+            17C344098E1B035A0314BE3F17C24317C24317C24317C243089220046D09046D
+            09046D09046304B4CDB404730C18C54717C44708901C035A0318C44717C34617
+            C34617C34617C34618C44718C74818C74818C8490FA92F538E5305780E16C648
+            16C64708932105821617C64A17C54917C54917C54917C64A089220035A03035B
+            03035B03046204589B583D9D4468EC924CDF7D25A33B05821614C54A15C54A15
+            C54A15C54A14C54A29D15E39D86B4DE07E68EE9389FAAE3C9B403AA14683FAAD
+            83FAAC5EC57108922184FAAD83F9AC83F9AC83F9AC83FAAC3EA74C1E89241E89
+            241E89241C84221C84223CA54A84FAB283FAB15EC87608922182FAAF81F9AD81
+            F9AD81F9AD81FAAE75E49875E49875E49875E4985BC4701E89244EA3542B8E32
+            2A8E2F1F88260F7F1778E39983FAB382FAB282FAB282FAB384FAB584FAB684FA
+            B684FAB686FAB83EA74CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF40A14A78E79B86
+            FAB685FAB678ED9F36A4452897322897332897335CB16389C58FFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFF31A34082F6B186FAB960D282C9E5CCFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF4F
+            C16685FABD78EBA26ABD77FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1C9E3185FAB786FAC22FAC44FFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF79
+            CB8984FABB86FAC631B24BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF45BD5F86FAC079F9B26DCD82FFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB9
+            E9C340CF643FC860FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+        end
+        object ButShowJustNotSynhronize: TSpeedButton
+          Left = 312
+          Top = 2
+          Width = 118
+          Height = 24
+          AllowAllUp = True
+          GroupIndex = 2
+          Caption = #1053#1077' '#1089#1080#1085#1093#1088#1086#1085#1110#1079#1086#1074#1072#1085#1110
+          Glyph.Data = {
+            36030000424D3603000000000000360000002800000010000000100000000100
+            1800000000000003000000000000000000000000000000000000FFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBDBDE90000B30202AEF6F6FDFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2C
+            2CBD110DF90E08EC5858CBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7877D71413F61C1EFF0D0DB7FFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF02
+            00BD181CFB1E26FF0D0BBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFD3D1F50C07D6212FFF151AEE5E5AD9FFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0800CD1D
+            2EFF2238FF141AE9E0DEF9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFF261ED51C28F5253EFF253DFF1C2BF80C02D70700D00700
+            D00700D03C35DB8883EB2920DE0A00D80A00D80A00D90A00D8202EF72C48FF2B
+            45FF2B45FF2B46FF2D49FF2E4CFF2E4CFF2337FF171FF4110DE01312E93152FF
+            3151FF1F29F6110BE63050FF2D49FF2D49FF2D49FF2E4AFF385AFF4D6FFF607E
+            FF607EFF7692FF0D04E21E1AED3453FF2E4EFF1B25F60E08E53454FF324FFF32
+            4FFF324FFF3350FF273AFF171FF40D04E20D04E20D04E25B55EE423FF893A8FF
+            6E88FF6C73FF0600E34161FF304FFF3050FF3050FF3050FF385AFF4D6FFF607E
+            FF607EFF7692FF4541F8403CFC8DA6FF8CA3FF636BFF3023FF94ACFF8FA4FF8F
+            A4FF8FA4FF90A6FF7376FF3226F61207F11207F11207F11207F1403DFF92A9FF
+            8FA5FF676DFF2C20FF93ABFF8CA1FF8CA1FF8CA1FF8DA2FF90A6FF97B0FF99B2
+            FF99B3FF99B3FF0800F54140FF95AEFF92ABFF6871FF2E23FF96AEFF8FA6FF8E
+            A5FF8EA5FF8EA6FF8A9CFF3733FF3C39FF3D3BFF3B35FF837DFC4542FF96A9FF
+            94A6FF6D73FF4744FF7174FF9DB7FF99B2FF99B1FF99B2FF96AFFF93A5FF94A7
+            FF97A7FF3833FFF7F7FF3E35FF0A00FF0900FF5952FFFFFFFF837FFF332AFF44
+            41FF4340FF4340FF4340FF4441FF4441FF4745FF2C25FFFFFFFF}
+        end
+        object ButShowJustAll: TSpeedButton
+          Left = 437
+          Top = 2
+          Width = 68
+          Height = 24
+          AllowAllUp = True
+          GroupIndex = 2
+          Caption = #1042#1089#1110
+          Glyph.Data = {
+            36030000424D3603000000000000360000002800000010000000100000000100
+            1800000000000003000000000000000000000000000000000000FFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFF2B2A991210B70804CD0906D00603BC09089A9697EAFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1E20D21210F71412F714
+            12F71412F71412F71412F71214D08889E7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFF7A79D61717F71516F71516F71516F71516F71516F71516F71516F71719
+            D1A9AAEEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF383BD8171DF7181EF7181EF718
+            1EF7181EF7181EF7181EF7181EF7181EF71817B8FFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFF2A2DD51A22F71A22F71A22F71A22F71A22F71A22F71A22F71A22F71A22
+            F70B0DCEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2A2DD51C2BF81C2BF81C2BF81C
+            2BF81C2BF81C2BF81C2BF82E37EB2939F90C10CFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFF474DE01E30F81E30F81E30F81E30F81E30F81E30F81E2FF81B1DC83B50
+            FA3138DCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6268E65F76FC5B73FC5C74FC5C
+            74FC5C74FC5C74FC5A72FC3237CA677CFD4A51E2FFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFF656BE6627AFC5E77FC657DFC5D75FC5E76FC5D75FC5D75FC2B31C36275
+            FD4F56E3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF656BE66379F92B31C35E7AFD2B
+            31C35E7AFD1B1DC8607BFD1512914A55E04148D9FFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFF6E73DF6D82F93339C76480FD3036C55E7BFD3237CA5F7EFD393FC88180
+            CAA4A4DDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF676DDD7B8AF43E45CA718FFD36
+            3CC86584FD2B31C36584FD7377D9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFB6B9EF687BF0363CC87C98FD383FC9718FFD3339C66B8AFD797DDBFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF4048CF2B31C37A99FE35
+            3DC87796FE363DC87492FE7F83DCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFF5055CE4E55D7363CC67291FF2F35C46A8AFE767AD9FFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFAA
+            ABE96A70DE6267D35C60D1B5B8EBFFFFFFFFFFFFFFFFFFFFFFFF}
+        end
+        object ImComboBoxForDateIndex: TcxImageComboBox
+          Left = 40
+          Top = 2
+          AutoSize = False
+          EditValue = 3
+          Properties.Alignment.Horz = taLeftJustify
+          Properties.Alignment.Vert = taVCenter
+          Properties.DropDownRows = 21
+          Properties.Items = <
+            item
+              Description = #1047#1072' '#1087#1086#1090#1086#1095#1085#1080#1081' '#1076#1077#1085#1100
+              ImageIndex = 0
+              Value = 0
+            end
+            item
+              Description = #1047#1072' '#1076#1074#1072' '#1076#1085#1110
+              Value = 1
+            end
+            item
+              Description = #1047#1072' '#1090#1088#1080' '#1076#1085#1110
+              Value = 2
+            end
+            item
+              Description = #1047#1072' '#1087#1086#1090#1086#1095#1085#1080#1081' '#1090#1080#1078#1076#1077#1085#1100
+              Value = 3
+            end
+            item
+              Description = #1047#1072' '#1076#1074#1072' '#1090#1080#1078#1085#1110
+              Value = 4
+            end
+            item
+              Description = #1047#1072' '#1090#1088#1080' '#1090#1080#1078#1085#1110
+              Value = 5
+            end
+            item
+              Description = #1047#1072' '#1087#1086#1090#1086#1095#1085#1080#1081' '#1084#1110#1089#1103#1094#1100
+              Value = 6
+            end
+            item
+              Description = #1047#1072' '#1076#1074#1072' '#1084#1110#1089#1103#1094#1110
+              Value = 7
+            end
+            item
+              Description = #1047#1072' '#1090#1088#1080' '#1084#1110#1089#1103#1094#1110
+              Value = 8
+            end
+            item
+              Description = #1047#1072' '#1087#1110#1074' '#1088#1086#1082#1091
+              Value = 9
+            end
+            item
+              Description = #1047#1072' '#1087#1086#1090#1086#1095#1085#1080#1081' '#1088#1110#1082
+              Value = 10
+            end>
+          Properties.OnEditValueChanged = ImComboBoxForDateIndexPropertiesEditValueChanged
+          TabOrder = 0
+          Height = 24
+          Width = 137
+        end
+      end
+    end
+  end
+  object PageControlView: TcxPageControl
+    Left = 0
+    Top = 56
+    Width = 1153
+    Height = 796
+    Align = alClient
+    TabOrder = 2
+    Properties.ActivePage = TabTree
+    ClientRectBottom = 792
+    ClientRectLeft = 4
+    ClientRectRight = 1149
+    ClientRectTop = 24
+    object TabView: TcxTabSheet
+      Caption = 'View'
+      ImageIndex = 0
+      object GridLogMergeSoap: TcxGrid
+        Left = 0
+        Top = 23
+        Width = 1145
+        Height = 745
+        Align = alClient
+        TabOrder = 0
+        LookAndFeel.NativeStyle = False
+        object GridLogMergeSoapDBTableView1: TcxGridDBTableView
+          DataController.Summary.DefaultGroupSummaryItems = <>
+          DataController.Summary.FooterSummaryItems = <>
+          DataController.Summary.SummaryGroups = <>
+        end
+        object GridLogMergeSoapLevel1: TcxGridLevel
+        end
+      end
+      object Panel1: TPanel
+        Left = 0
+        Top = 0
+        Width = 1145
+        Height = 23
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 1
+        DesignSize = (
+          1145
+          23)
+        object butSearch: TSpeedButton
+          Left = 480
+          Top = 1
+          Width = 23
+          Height = 20
+          Hint = #1055#1086#1096#1091#1082' '#1083#1086#1082#1072#1083#1100#1085#1080#1081
+          Anchors = [akTop, akRight]
+          Flat = True
+          Glyph.Data = {
+            36030000424D3603000000000000360000002800000010000000100000000100
+            1800000000000003000000000000000000000000000000000000FFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FF4D74AB234179C5ABA7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFF4173AF008EEC009AF41F4B80FFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFF2F6EB22BA7
+            F516C0FF00A0F3568BC3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFEFFFF2974BB68C4F86BD4FF279CE66696C8FFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3D8FD5A4E3FEB5EEFF4CAA
+            E7669DD2FFFFFFFFFFFFFFFFFFFFFFFFFEFEFEA188898A6A6A93736E866567B0
+            9595BAA8B1359EE8BDF5FF77C4EF63A1DAFFFFFFFFFFFFFFFFFFFFFFFFD7CDCD
+            7E5857DFD3CBFFFFF7FFFFE7FFFEDBD6BB9E90584D817B8E1794E46BB5E9FFFF
+            FFFFFFFFFFFFFFFFFFFFEDE9E9886565FFFFFFFFFFFFFDF8E8FAF2DCF8EDCFFF
+            F1CFF6DEBA9F5945C0C7D5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA38889F6EFEA
+            FFFFFFFEFBF5FBF7E8F9F4DAF5EBCCE6CEACF3DAB8E2BD99AB8B8EFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFF937674FFFFFFFDFBF1FCF8EEFAF3E1FCF5E3F7F0D7F0
+            DFC1E7C9A9F0D1ABA87E75F8F6F6FFFFFFFFFFFFFFFFFFFFFFFF997D7AFFFFFC
+            F9F2E1FAF3DEFAF7E5FAF1DCF1DFC0EDD9BAECD8B9EDCAA5AF8679EDE8E9FFFF
+            FFFFFFFFFFFFFFFFFFFF9C807BFFFFEBF9EED5FAF1D7F9F2DAF2E3C6FEFBF9FF
+            FFF0EFDFC0E9C69EB0857BF5F2F3FFFFFFFFFFFFFFFFFFFFFFFFAF9596F7EAC8
+            F9EBCCEFDCBEF4E4C7F0E1C5FDFCECFAF5DDEFDCBCDFB087B59A9AFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFDED4D7BA998CFDECC4EDD4B0E5CAA8EFDBBFF2E3C4F2
+            DEBCEABF93BB8E7DE7DFE2FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFCEBFC5
+            BE9A8DE6C7A5EFCBA3ECC8A2E8BE94DCAA86BE9585DFD6D7FFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE9E4E6C9B3B4B99C93C3A097BF9F96CC
+            B9B7F1EEEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+          ParentShowHint = False
+          ShowHint = True
+          OnClick = butSearchClick
+        end
+        object EdSearch: TcxTextEdit
+          Left = 1
+          Top = 0
+          Anchors = [akLeft, akTop, akRight]
+          Style.Color = clInfoBk
+          Style.LookAndFeel.Kind = lfStandard
+          Style.LookAndFeel.NativeStyle = False
+          StyleDisabled.LookAndFeel.Kind = lfStandard
+          StyleDisabled.LookAndFeel.NativeStyle = False
+          StyleFocused.LookAndFeel.Kind = lfStandard
+          StyleFocused.LookAndFeel.NativeStyle = False
+          StyleHot.Color = clInfoBk
+          StyleHot.LookAndFeel.Kind = lfStandard
+          StyleHot.LookAndFeel.NativeStyle = False
+          TabOrder = 0
+          OnKeyPress = EdSearchKeyPress
+          Width = 477
+        end
+      end
+    end
+    object TabTree: TcxTabSheet
+      Caption = 'Tree Web'
+      ImageIndex = 1
+      object TreeLogMergeSoapWeb: TcxDBTreeList
+        Left = 0
+        Top = 0
+        Width = 1145
+        Height = 768
+        Align = alClient
+        Bands = <
+          item
+          end>
+        DataController.DataSource = DSMergeSoap
+        DataController.ParentField = 'PARENT'
+        DataController.KeyField = 'ID'
+        LookAndFeel.Kind = lfStandard
+        LookAndFeel.NativeStyle = False
+        OptionsCustomizing.ColumnCustomizing = False
+        OptionsCustomizing.ColumnMoving = False
+        OptionsCustomizing.ColumnVertSizing = False
+        OptionsData.Editing = False
+        OptionsSelection.CellSelect = False
+        OptionsView.ColumnAutoWidth = True
+        OptionsView.Footer = True
+        RootValue = -1
+        Styles.StyleSheet = MyStyleTree
+        TabOrder = 0
+        object TreeLogMergeSoapWebID: TcxDBTreeListColumn
+          Visible = False
+          Caption.AlignHorz = taCenter
+          Caption.AlignVert = vaCenter
+          DataBinding.FieldName = 'ID'
+          Options.Sizing = False
+          Position.ColIndex = 0
+          Position.RowIndex = 0
+          Position.BandIndex = 0
+          SortOrder = soAscending
+          SortIndex = 0
+          Summary.FooterSummaryItems = <>
+          Summary.GroupFooterSummaryItems = <>
+        end
+        object TreeLogMergeSoapWebPARENT: TcxDBTreeListColumn
+          Visible = False
+          Caption.AlignHorz = taCenter
+          Caption.AlignVert = vaCenter
+          DataBinding.FieldName = 'PARENT'
+          Options.Sizing = False
+          Options.Sorting = False
+          Position.ColIndex = 1
+          Position.RowIndex = 0
+          Position.BandIndex = 0
+          Summary.FooterSummaryItems = <>
+          Summary.GroupFooterSummaryItems = <>
+        end
+        object TreeLogMergeSoapWebADATE: TcxDBTreeListColumn
+          PropertiesClassName = 'TcxDateEditProperties'
+          Caption.AlignHorz = taCenter
+          Caption.AlignVert = vaCenter
+          Caption.Text = #1044#1072#1090#1072
+          DataBinding.FieldName = 'ADATE'
+          Options.Sorting = False
+          Width = 116
+          Position.ColIndex = 3
+          Position.RowIndex = 0
+          Position.BandIndex = 0
+          Summary.FooterSummaryItems = <>
+          Summary.GroupFooterSummaryItems = <>
+        end
+        object TreeLogMergeSoapWebTABLENAME: TcxDBTreeListColumn
+          Caption.AlignHorz = taCenter
+          Caption.AlignVert = vaCenter
+          Caption.Text = #1058#1072#1073#1083#1080#1094#1103
+          DataBinding.FieldName = 'TABLENAME'
+          Options.Sorting = False
+          Width = 288
+          Position.ColIndex = 2
+          Position.RowIndex = 0
+          Position.BandIndex = 0
+          Summary.FooterSummaryItems = <>
+          Summary.GroupFooterSummaryItems = <>
+        end
+        object TreeLogMergeSoapWebcxDBTreeOBJECTNAME: TcxDBTreeListColumn
+          Caption.AlignHorz = taCenter
+          Caption.AlignVert = vaCenter
+          Caption.Text = #1054#1073#39#1108#1082#1090
+          DataBinding.FieldName = 'OBJECTNAME'
+          Options.Sorting = False
+          Width = 303
+          Position.ColIndex = 4
+          Position.RowIndex = 0
+          Position.BandIndex = 0
+          Summary.FooterSummaryItems = <>
+          Summary.GroupFooterSummaryItems = <>
+        end
+        object TreeLogMergeSoapWebOPERATIONID: TcxDBTreeListColumn
+          PropertiesClassName = 'TcxTextEditProperties'
+          Properties.Alignment.Horz = taLeftJustify
+          Properties.Alignment.Vert = taVCenter
+          Caption.AlignHorz = taCenter
+          Caption.AlignVert = vaCenter
+          Caption.Text = 'ID'
+          DataBinding.FieldName = 'OPERATIONID'
+          Options.Sizing = False
+          Options.Sorting = False
+          Width = 42
+          Position.ColIndex = 5
+          Position.RowIndex = 0
+          Position.BandIndex = 0
+          Summary.FooterSummaryItems = <>
+          Summary.GroupFooterSummaryItems = <>
+        end
+        object TreeLogMergeSoapWebUSERNAME: TcxDBTreeListColumn
+          Caption.AlignHorz = taCenter
+          Caption.AlignVert = vaCenter
+          Caption.Text = #1052#1077#1085#1077#1076#1078#1077#1088
+          DataBinding.FieldName = 'USERNAME'
+          Options.Sizing = False
+          Options.Sorting = False
+          Width = 182
+          Position.ColIndex = 6
+          Position.RowIndex = 0
+          Position.BandIndex = 0
+          Summary.FooterSummaryItems = <>
+          Summary.GroupFooterSummaryItems = <>
+        end
+        object TreeLogMergeSoapWebREASON: TcxDBTreeListColumn
+          PropertiesClassName = 'TcxImageComboBoxProperties'
+          Properties.Alignment.Horz = taLeftJustify
+          Properties.Alignment.Vert = taVCenter
+          Properties.Images = ImageListReason
+          Properties.Items = <
+            item
+              Description = #1055#1091#1089#1090#1080#1081' '#1079#1072#1087#1080#1090
+              ImageIndex = 3
+              Value = 1
+            end
+            item
+              Description = #1042#1091#1076#1089#1091#1090#1085#1110#1089#1090#1100' '#1079#1074#39#1103#1079#1082#1091
+              ImageIndex = 2
+              Value = 2
+            end
+            item
+              Description = #1055#1086#1084#1080#1083#1082#1072' '#1089#1080#1085#1093#1088#1086#1085#1110#1079#1072#1094#1110#1111
+              ImageIndex = 3
+              Value = 3
+            end
+            item
+              Description = #1053#1077#1074#1110#1076#1086#1084#1072
+              ImageIndex = 3
+              Value = -1
+            end>
+          Caption.AlignHorz = taCenter
+          Caption.AlignVert = vaCenter
+          Caption.Text = #1055#1088#1080#1095#1080#1085#1072
+          DataBinding.FieldName = 'REASON'
+          Options.Sizing = False
+          Options.Sorting = False
+          Width = 160
+          Position.ColIndex = 7
+          Position.RowIndex = 0
+          Position.BandIndex = 0
+          Summary.FooterSummaryItems = <>
+          Summary.GroupFooterSummaryItems = <>
+        end
+        object TreeLogMergeSoapWebcxDBTreeListMENID: TcxDBTreeListColumn
+          Visible = False
+          DataBinding.FieldName = 'MENID'
+          Options.Sizing = False
+          Options.Sorting = False
+          Position.ColIndex = 8
+          Position.RowIndex = 0
+          Position.BandIndex = 0
+          Summary.FooterSummaryItems = <>
+          Summary.GroupFooterSummaryItems = <>
+        end
+        object TreeLogMergeSoapWebcxDBTreeListKEYFIELD_ID: TcxDBTreeListColumn
+          Visible = False
+          Caption.AlignHorz = taCenter
+          Caption.AlignVert = vaCenter
+          Caption.Text = #1050#1083#1102#1095#1086#1074#1077' '#1087#1086#1083#1077
+          DataBinding.FieldName = 'KEYFIELD_ID'
+          Options.Sorting = False
+          Position.ColIndex = 9
+          Position.RowIndex = 0
+          Position.BandIndex = 0
+          Summary.FooterSummaryItems = <>
+          Summary.GroupFooterSummaryItems = <>
+        end
+      end
+    end
+  end
+  object cxGridViewRepository: TcxGridViewRepository
+    Left = 504
+    Top = 120
+    object ViewMergeSoap1C: TcxGridDBTableView
+      DataController.DataSource = DSMergeSoap
+      DataController.KeyFieldNames = 'MEGESOAPID'
+      DataController.Summary.DefaultGroupSummaryItems = <>
+      DataController.Summary.FooterSummaryItems = <
+        item
+          Format = #1050#1110#1083#1100#1082#1110#1089#1090#1100' : ######'
+          Kind = skCount
+          FieldName = 'CheckREASON'
+          Column = ViewMergeSoap1CREASON
+        end>
+      DataController.Summary.SummaryGroups = <>
+      OptionsData.Editing = False
+      OptionsSelection.CellSelect = False
+      OptionsView.NoDataToDisplayInfoText = ' '
+      OptionsView.ColumnAutoWidth = True
+      OptionsView.Footer = True
+      OptionsView.GroupByBox = False
+      Styles.StyleSheet = MyStyle
+      object ViewMergeSoap1CMEGESOAPID: TcxGridDBColumn
+        DataBinding.FieldName = 'MEGESOAPID'
+        Visible = False
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        Options.Filtering = False
+        Options.Grouping = False
+        Options.Moving = False
+      end
+      object ViewMergeSoap1CADATE: TcxGridDBColumn
+        Caption = #1044#1072#1090#1072
+        DataBinding.FieldName = 'ADATE'
+        PropertiesClassName = 'TcxDateEditProperties'
+        Properties.Alignment.Horz = taCenter
+        Properties.Alignment.Vert = taVCenter
+        Properties.SaveTime = False
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 110
+        Options.Filtering = False
+        Options.Grouping = False
+        Options.HorzSizing = False
+        Options.Moving = False
+        Width = 110
+      end
+      object ViewMergeSoap1CTYPEOPERATION: TcxGridDBColumn
+        Caption = #1044#1110#1103
+        DataBinding.FieldName = 'TYPEOPERATION'
+        PropertiesClassName = 'TcxImageComboBoxProperties'
+        Properties.Alignment.Horz = taLeftJustify
+        Properties.Alignment.Vert = taVCenter
+        Properties.Images = ImageListAction
+        Properties.Items = <
+          item
+            Description = #1057#1080#1085#1093#1088#1086#1085#1110#1079#1072#1094#1110#1103' '#1087#1072#1088#1090#1085#1077#1088#1072
+            ImageIndex = 2
+            Value = 0
+          end
+          item
+            Description = #1057#1080#1085#1093#1088#1086#1085#1110#1079#1072#1094#1110#1103' '#1076#1086#1075#1086#1074#1086#1088#1091
+            ImageIndex = 0
+            Value = 1
+          end
+          item
+            Description = #1057#1080#1085#1093#1088#1086#1085#1110#1079#1072#1094#1110#1103' '#1073#1072#1085#1082'. '#1088#1072#1093#1091#1085#1082#1110#1074
+            ImageIndex = 1
+            Value = 2
+          end
+          item
+            Description = #1057#1080#1085#1093#1088#1086#1085#1110#1079#1072#1094#1110#1103' '#1110#1085#1074#1086#1081#1089#1110#1074
+            ImageIndex = 3
+            Value = 3
+          end
+          item
+            Description = #1057#1080#1085#1093#1088#1086#1085#1110#1079#1072#1094#1110#1103' '#1082#1091#1088#1089#1110#1074' '#1074#1072#1083#1102#1090
+            ImageIndex = 7
+            Value = 4
+          end
+          item
+            Description = #1057#1080#1085#1093#1088#1086#1085#1110#1079#1072#1094#1110#1103' '#1092#1072#1082#1090#1091#1088
+            ImageIndex = 8
+            Value = 5
+          end>
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 172
+        Options.Filtering = False
+        Options.Grouping = False
+        Options.HorzSizing = False
+        Options.Moving = False
+        Width = 172
+      end
+      object ViewMergeSoap1COBJECTNAME: TcxGridDBColumn
+        Caption = #1054#1073#39#1101#1082#1090
+        DataBinding.FieldName = 'OBJECTNAME'
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 300
+        Options.Filtering = False
+        Options.Grouping = False
+        Options.Moving = False
+        Width = 470
+      end
+      object ViewMergeSoap1COPERATIONID: TcxGridDBColumn
+        Caption = 'ID'
+        DataBinding.FieldName = 'OPERATIONID'
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taLeftJustify
+        Properties.Alignment.Vert = taVCenter
+        FooterAlignmentHorz = taRightJustify
+        GroupSummaryAlignment = taRightJustify
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 64
+        Options.Filtering = False
+        Options.HorzSizing = False
+        Options.Sorting = False
+      end
+      object ViewMergeSoap1CUSERNAME: TcxGridDBColumn
+        Caption = #1052#1077#1085#1077#1076#1078#1077#1088
+        DataBinding.FieldName = 'USERNAME'
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 182
+        Options.Filtering = False
+        Options.HorzSizing = False
+        Options.Moving = False
+        Width = 182
+      end
+      object ViewMergeSoap1CREASON: TcxGridDBColumn
+        Caption = #1057#1090#1072#1090#1091#1089
+        DataBinding.FieldName = 'CheckREASON'
+        PropertiesClassName = 'TcxImageComboBoxProperties'
+        Properties.Alignment.Horz = taLeftJustify
+        Properties.Alignment.Vert = taVCenter
+        Properties.Images = ImageListReason
+        Properties.Items = <
+          item
+            Description = #1042#1110#1076#1089#1091#1090#1085#1110#1089#1090#1100' '#1079#1074#39#1103#1079#1082#1091
+            ImageIndex = 2
+            Value = 0
+          end
+          item
+            Description = #1054#1095#1110#1082#1091#1108' '#1091#1079#1075#1086#1076#1078#1077#1085#1085#1103' '#1084#1077#1085#1077#1076#1078#1077#1088#1072
+            ImageIndex = 1
+            Value = 1
+          end
+          item
+            Description = #1053#1077#1074#1110#1076#1086#1084#1080#1081
+            ImageIndex = 3
+            Value = -1
+          end
+          item
+            Description = #1057#1080#1085#1093#1088#1086#1085#1110#1079#1086#1074#1072#1085#1086
+            ImageIndex = 0
+          end
+          item
+            Description = #1042#1110#1076#1089#1091#1090#1085#1110#1081' '#1082#1086#1085#1090#1088#1072#1082#1090
+            ImageIndex = 4
+            Value = -3
+          end>
+        OnCustomDrawCell = ViewMergeSoap1CREASONCustomDrawCell
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 200
+        Options.Filtering = False
+        Options.HorzSizing = False
+        Options.Moving = False
+        Width = 200
+      end
+    end
+    object ViewMergeSoapWeb: TcxGridDBTableView
+      DataController.DataSource = DSMergeSoap
+      DataController.KeyFieldNames = 'ID'
+      DataController.Summary.DefaultGroupSummaryItems = <>
+      DataController.Summary.FooterSummaryItems = <
+        item
+          Format = #1050#1110#1083#1100#1082#1110#1089#1090#1100' : ######'
+          Kind = skCount
+          FieldName = 'REASON'
+          Column = ViewMergeSoapWebREASON
+        end>
+      DataController.Summary.SummaryGroups = <>
+      OptionsCustomize.ColumnFiltering = False
+      OptionsCustomize.ColumnGrouping = False
+      OptionsCustomize.ColumnHorzSizing = False
+      OptionsCustomize.ColumnMoving = False
+      OptionsData.CancelOnExit = False
+      OptionsData.Deleting = False
+      OptionsData.DeletingConfirmation = False
+      OptionsData.Editing = False
+      OptionsData.Inserting = False
+      OptionsSelection.CellSelect = False
+      OptionsView.NoDataToDisplayInfoText = ' '
+      OptionsView.ColumnAutoWidth = True
+      OptionsView.Footer = True
+      OptionsView.GroupByBox = False
+      Styles.StyleSheet = MyStyle
+      object ViewMergeSoapWebID: TcxGridDBColumn
+        DataBinding.FieldName = 'ID'
+        Visible = False
+        FooterAlignmentHorz = taRightJustify
+        GroupSummaryAlignment = taRightJustify
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        Options.Filtering = False
+      end
+      object ViewMergeSoapWebADATE: TcxGridDBColumn
+        Caption = #1044#1072#1090#1072
+        DataBinding.FieldName = 'ADATE'
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 110
+        Options.Filtering = False
+        Options.HorzSizing = False
+        SortIndex = 0
+        SortOrder = soAscending
+        Width = 110
+      end
+      object ViewMergeSoapWebTABLENAME: TcxGridDBColumn
+        Caption = #1058#1072#1073#1083#1080#1094#1103
+        DataBinding.FieldName = 'TABLENAME'
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 132
+        Options.Filtering = False
+        Options.HorzSizing = False
+        Width = 132
+      end
+      object ViewMergeSoapWebOPERATIONIDTableValue: TcxGridDBColumn
+        Caption = #1054#1073#39#1108#1082#1090
+        DataBinding.FieldName = 'OBJECTNAME'
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        Options.Filtering = False
+        Width = 470
+      end
+      object ViewMergeSoapWebOPERATIONID: TcxGridDBColumn
+        Caption = 'ID'
+        DataBinding.FieldName = 'OPERATIONID'
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taLeftJustify
+        Properties.Alignment.Vert = taVCenter
+        FooterAlignmentHorz = taRightJustify
+        GroupSummaryAlignment = taRightJustify
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 64
+        Options.Filtering = False
+        Options.HorzSizing = False
+      end
+      object ViewMergeSoapWebMENID: TcxGridDBColumn
+        Caption = #1052#1077#1085#1077#1076#1078#1077#1088
+        DataBinding.FieldName = 'USERNAME'
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 182
+        Options.Filtering = False
+        Options.HorzSizing = False
+        Width = 182
+      end
+      object ViewMergeSoapWebREASON: TcxGridDBColumn
+        Caption = #1055#1088#1080#1095#1080#1085#1072
+        DataBinding.FieldName = 'REASON'
+        PropertiesClassName = 'TcxImageComboBoxProperties'
+        Properties.Alignment.Horz = taLeftJustify
+        Properties.Alignment.Vert = taVCenter
+        Properties.Images = ImageListReason
+        Properties.Items = <
+          item
+            Description = #1042#1091#1076#1089#1091#1090#1085#1110#1089#1090#1100' '#1079#1074#39#1103#1079#1082#1091
+            ImageIndex = 2
+            Value = 1
+          end
+          item
+            Description = #1053#1077#1074#1110#1076#1086#1084#1086
+            ImageIndex = 3
+            Value = -1
+          end>
+        FooterAlignmentHorz = taRightJustify
+        GroupSummaryAlignment = taRightJustify
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 200
+        Options.Filtering = False
+        Options.HorzSizing = False
+        Width = 200
+      end
+    end
+    object ViewLog: TcxGridDBTableView
+      FilterBox.Visible = fvNever
+      DataController.DataSource = DSMergeSoap
+      DataController.KeyFieldNames = 'ID'
+      DataController.Summary.DefaultGroupSummaryItems = <>
+      DataController.Summary.FooterSummaryItems = <>
+      DataController.Summary.SummaryGroups = <>
+      OptionsSelection.CellSelect = False
+      OptionsView.NoDataToDisplayInfoText = ' '
+      OptionsView.ColumnAutoWidth = True
+      Styles.StyleSheet = MyStyle
+      object ViewLogID: TcxGridDBColumn
+        DataBinding.FieldName = 'ID'
+        Visible = False
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 100
+        Options.Editing = False
+        Options.HorzSizing = False
+        Options.Moving = False
+        Width = 100
+      end
+      object ViewLogADATE: TcxGridDBColumn
+        Caption = #1044#1072#1090#1072
+        DataBinding.FieldName = 'ADATE'
+        PropertiesClassName = 'TcxDateEditProperties'
+        Properties.Alignment.Horz = taCenter
+        Properties.Alignment.Vert = taVCenter
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 130
+        Options.Editing = False
+        Options.HorzSizing = False
+        Width = 130
+      end
+      object ViewLogTYPEACTION: TcxGridDBColumn
+        Caption = #1044#1110#1103
+        DataBinding.FieldName = 'TYPEACTION'
+        PropertiesClassName = 'TcxImageComboBoxProperties'
+        Properties.Alignment.Horz = taLeftJustify
+        Properties.Images = ImageListAction
+        Properties.Items = <
+          item
+            Description = #1044#1086#1076#1072#1085#1086
+            ImageIndex = 4
+            Value = 0
+          end
+          item
+            Description = #1047#1084#1110#1085#1077#1085#1086
+            ImageIndex = 5
+            Value = 1
+          end
+          item
+            Description = #1042#1110#1080#1076#1072#1083#1077#1085#1086
+            ImageIndex = 6
+            Value = 2
+          end>
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 95
+        Options.Editing = False
+        Options.HorzSizing = False
+        Width = 95
+      end
+      object ViewLogUSERID: TcxGridDBColumn
+        Caption = #1052#1077#1085#1077#1076#1078#1077#1088
+        DataBinding.FieldName = 'USERID'
+        Visible = False
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 175
+        Options.Editing = False
+        Options.HorzSizing = False
+        Width = 175
+      end
+      object ViewLogTITLE: TcxGridDBColumn
+        Caption = #1054#1087#1080#1089' '#1077#1083#1077#1084#1077#1085#1090#1072
+        DataBinding.FieldName = 'TITLE'
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 50
+        Options.Editing = False
+        Width = 294
+      end
+      object ViewLogUSERNAME: TcxGridDBColumn
+        Caption = #1052#1077#1085#1077#1076#1078#1077#1088
+        DataBinding.FieldName = 'USERNAME'
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 150
+        Options.HorzSizing = False
+        Width = 150
+      end
+      object ViewLogTABLENAME: TcxGridDBColumn
+        Caption = #1058#1072#1073#1083#1080#1094#1103
+        DataBinding.FieldName = 'TABLENAME'
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 146
+        Options.Editing = False
+        Options.HorzSizing = False
+        Width = 146
+      end
+      object ViewLogOBJID: TcxGridDBColumn
+        Caption = #1054#1073#39#1108#1082#1090' ID'
+        DataBinding.FieldName = 'OBJID'
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taLeftJustify
+        Properties.Alignment.Vert = taVCenter
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 65
+        Options.Editing = False
+        Options.HorzSizing = False
+        Width = 65
+      end
+      object ViewLogFORMNAME: TcxGridDBColumn
+        Caption = #1060#1086#1088#1084#1072
+        DataBinding.FieldName = 'FORMNAME'
+        Visible = False
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 100
+        Options.Editing = False
+        Options.HorzSizing = False
+        Width = 100
+      end
+      object ViewLogFORMCAPTION: TcxGridDBColumn
+        Caption = #1053#1072#1079#1074#1072' '#1092#1086#1088#1084#1080
+        DataBinding.FieldName = 'FORMCAPTION'
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 250
+        Options.Editing = False
+        Options.HorzSizing = False
+        Width = 250
+      end
+      object ViewLogADATA: TcxGridDBColumn
+        DataBinding.FieldName = 'ADATA'
+        Visible = False
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 100
+        Options.Editing = False
+        Options.HorzSizing = False
+        Width = 100
+      end
+      object ViewLogAPLICATION: TcxGridDBColumn
+        Caption = #1058#1091#1088#1080#1089#1090#1080#1095#1085#1080#1081' '#1076#1086#1076#1072#1090#1086#1082
+        DataBinding.FieldName = 'APLICATION'
+        HeaderAlignmentHorz = taCenter
+        HeaderAlignmentVert = vaCenter
+        MinWidth = 140
+        Options.Editing = False
+        Options.HorzSizing = False
+        Width = 140
+      end
+      object ViewLogAPPLICATIONICON: TcxGridDBColumn
+        DataBinding.FieldName = 'APPLICATIONICON'
+        PropertiesClassName = 'TcxBlobEditProperties'
+        Properties.BlobEditKind = bekPict
+        Properties.PictureGraphicClassName = 'TIcon'
+        Visible = False
+        IsCaptionAssigned = True
+      end
+    end
+  end
+  object DSMergeSoap: TDataSource
+    Left = 368
+    Top = 96
+  end
+  object ImageListAction: TImageList
+    Left = 368
+    Top = 160
+    Bitmap = {
+      494C010109000A00080010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      0000000000003600000028000000400000003000000001002000000000000030
+      00000000000000000000000000000000000000000000D7AD9400DDBAA500DEBC
+      A600DEBCA600DEBCA600DEBCA600DEBBA500E0C0AD00E4C9B800123BED00123B
+      ED00000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DEBBA500000000000000
+      000000000000000000000000000000000000E8D4C700123BED00123BED00123B
+      ED00123BED00F0E3DA0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DEBCA600000000000000
+      000000000000000000000000000000000000123BED00123BED00C9947200C790
+      6D00123BED00123BED0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000E0C0AB00F2E6E000DAB4
+      9B00DCB7A200DCB7A200DBB59D00E2C5B300F0E3DC000000000000000000D7B3
+      9B00123BED00123BED0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DEBDA80000000000F0E3
+      DA00F1E4DD00F1E4DD00F1E3DB00F3E7E10000000000D2A88D00123BED00123B
+      ED00123BED00D3AC950000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DFBFAA0000000000E0C0
+      AD00E2C3B100E2C3B100E1C2AF00E7CFC000123BED00123BED00123BED00D4AB
+      9100F0E3DC000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DFBFAA0000000000E1C4
+      B100E3C7B500E3C7B500E2C4B100EAD7CB00123BED00123BED00C68E6C00E9D6
+      CB00D4AA9000DEC0AD0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DFBEA90000000000E8D2
+      C400EAD4C800EAD4C800E9D4C700EEDDD200E7D1C400123BED00123BED00123B
+      ED00123BED00CA97750000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DFBFAA0000000000DFBD
+      A900E0C1AD00E0C1AD00E0C1AD00E0C0AB00E2C5B30000000000DDBDA900123B
+      ED00E9D4C700EDDBD00000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DFBFAA0000000000E4C8
+      B700E5CBBB00E5CBBB00E7CFC000E8D1C300E8D0C100E7CFC000E4CCBC00EAD8
+      CB00ECDBD100E1C2AF0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DFBDA90000000000EEDE
+      D400EEDED400EDDBD000DFBFAA00DAB49E00DBB79F00DBB79F00DBB49E00E7CE
+      BF00EDDBD000E1C2AF0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000D7AE9600000000000000
+      00000000000000000000E4CAB900DBB59D00DCB8A100DCB8A100DBB59D00E6CC
+      BE00EDDBD100E1C2AF0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000CA927000B6663400B465
+      3300BC764A0000000000EAD5C800DFBFAA00E1C2AF00E1C2AF00E0C0AB00E9D3
+      C500ECDAD000E1C2AF0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000C88E6A00B666
+      3400B6663400EEDED40000000000000000000000000000000000000000000000
+      0000ECDACE00E1C2AF0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000CA93
+      7000B6663400EEDED40000000000000000000000000000000000000000000000
+      0000ECDACE00E1C2AF0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000CD987600D2A38700DCB9A200DBB79F00DBB79F00DBB79F00DBB79F00DCB8
+      A100D4A78A00ECDACE0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000EEE2D900CD9A7900CF9D
+      7D00D09E7E00D09E7E00CF9D7E00D39F7F00DCB0930000000000000000000000
+      00000000000000000000000000000000000000000000EEE2D900CD9A7900CF9D
+      7D00D09E7E00D09E7E00D09E7E00CF9E7F00D8AC8F0000000000000000000000
+      00000000000000000000000000000000000000000000ECDED600CE9C7B00CD98
+      7500CE9A7900CD9B7C00CF9A7700CE916700DAAD8F0000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000BF8F7000DCB9A2000000
+      00000000000000000000000000000000000000000000E4DCD600CEC0B500D6CB
+      C0000000000000000000000000000000000000000000BF8F7000DCB9A2000000
+      00000000000000000000F8C29600F8AD6D00F9B07500FCB47B00FAB17900F9B1
+      7500F9AF7000FCEEE300000000000000000000000000C79A7D00D9B59D00F3E9
+      E300F0E4DD00F0E2D900EFB78900FDA04900FDA75500FBA65A00F9A15900FDA3
+      4F00FCC797000000000000000000000000000000000000000000000000000000
+      000000000000E6E1DE00CAB1A200CC9F8100CC9F8300CAB1A200E6E1DE000000
+      00000000000000000000000000000000000000000000C78D6800EDDCD3000000
+      000000000000000000000000000000000000B78B6300F07A1500FF851B00FE82
+      1800E2792200BCACA200000000000000000000000000C78D6800EDDCD3000000
+      000000000000FBD8BB00F8974500F8DECA00F8DECA00F1DDC500F0DCC200F8E0
+      CE00F8C39800FAB88200000000000000000000000000CA947200F0E2D9000000
+      000000000000F9D6BA00FCB17000D6AEA900D3ACA700EAC2A800FACEA300DFB9
+      A300DF966400F9D6B80000000000000000000000000000000000000000000000
+      0000BCA18F00B6683600BE6A3500B3653300B4653300BE6B3500B6683600BCA1
+      90000000000000000000000000000000000000000000C98F6A00ECDACE000000
+      0000000000000000000000000000B9875B00FF891600FE7B0C00F6CD9D00FAAA
+      6100FF7C0B00FE821600C2B6AE000000000000000000C98F6A00ECDACE000000
+      000000000000FAAF7000F6C09500000000000000000080C95B007DC858000000
+      000000000000F7AE7200000000000000000000000000CE987700EEDFD7000000
+      000000000000FCB06F00FBDCC100CECDF4005C61F500E5E2F1000000000097A2
+      EF00C0A3AF00F9933C000000000000000000000000000000000000000000C5B1
+      A500C46D3700B3876A00D8CFC7000000000000000000D8CFC700B3876A00C36D
+      3600B1896C0000000000000000000000000000000000C98F6A00ECDACE000000
+      00000000000000000000D3CDC800F87C1200FE780700FA700000F8D8B300FAAD
+      6800FB6E0000FF7F0D00CF7A38000000000000000000C98F6A00ECDACE000000
+      000000000000FCB17300F7BE94000000000084D067005EBB2D005EBB2C006FC8
+      4D0000000000FDB68300000000000000000000000000CD987700EDDFD7000000
+      000000000000FAB78000F9D7BB00E2E0F2004D4DE400666BF200949AF7007278
+      EA00EBCFC400F89A4A0000000000000000000000000000000000000000000000
+      0000D5C8BF000000000000000000B8978100B99985000000000000000000BEA5
+      9500C36E3700BCA29000000000000000000000000000C98F6A00ECDACE000000
+      00000000000000000000BE9C8100FF8F2500FABE8700FABD8600FBEBD800FBD8
+      B700FABD8600FDAC6200E7761A000000000000000000C98F6A00ECDACE000000
+      000000000000FDB17500EEC79B008ACE6B005FBB2D0066BD37006DC040005EBB
+      2C007ECA5B0000000000000000000000000000000000CD987700EDDFD6000000
+      000000000000FAB78000F9D5B70000000000D8D7F3002D3DF6003946F200D7D8
+      F70000000000FAB17300000000000000000000000000BEA69800B1744E000000
+      000000000000C8B7AC00B8714500B6704200B66B3B00B2806000000000000000
+      0000B0826600B4693800000000000000000000000000C98F6A00ECDACE000000
+      00000000000000000000BE9B7F00FF912900FACDA200FACEA300FBF0E100FBE2
+      C800FACEA400FCB67400E87718000000000000000000C98F6A00ECDACE000000
+      000000000000FDB17500EFC79B008DCF6D005DBB2D00D8EECF00000000006BC0
+      3F005EBB2C007CC95700000000000000000000000000CD987700EDDFD6000000
+      000000000000FAB78000FAD6BA00D4D4EC007586F3004358F6005F6DF400A6AE
+      F70000000000FAB780000000000000000000D5CCC400B6673500BF6B3600B185
+      68000000000000000000E6E0DD0000000000D8CDC600C16C3600BDA18E000000
+      0000D7CCC700BE6A3500CBBCB1000000000000000000C98F6A00ECDACE000000
+      00000000000000000000D1C9C200FD7E1400FD780900F9700000F8D8B300FAAD
+      6800FA6F0000FF7F0E00D47E38000000000000000000C98F6A00ECDACE000000
+      000000000000FCB07000F7C0980000000000E5F3DD0000000000000000000000
+      000067C340005EBB2C007BC754000000000000000000CD987700EDDFD6000000
+      000000000000FAB57B00FADCC000A2A4F2006673F200CFD0F90000000000999C
+      F4009396FD00F8B578000000000000000000B17A5600B6663400B6663300B769
+      3700C8B9AE000000000000000000C8B3A600B2775000BB693400CEC1B8000000
+      0000E5E0DC00B8673300BC9D89000000000000000000C98F6A00ECDACE000000
+      0000000000000000000000000000BD855600FF891600FC7A0C00F6CD9D00F9A9
+      6100FF7C0B00FF831500BEB0A6000000000000000000C98F6A00ECDACE000000
+      000000000000FAC59A00F8AC6C00000000000000000000000000000000000000
+      0000E8EBD20071C3470060BC2E000000000000000000CD987700EEDFD6000000
+      000000000000FCBD8800FACEA800000000000000000000000000000000000000
+      000000000000FCBD8800000000000000000000000000BD9D8900B8673400E5E0
+      DC0000000000DED7D300B2724800B6683700B68F7700DDD5D10000000000CABB
+      B000B7683700B6663300B6663400B17A570000000000C98F6B00EEDFD5000000
+      000000000000000000000000000000000000BD8A5F00FC801500FF871B00FF86
+      1800E2771D00C1AD9D00000000000000000000000000C98F6B00EEDFD5000000
+      00000000000000000000F9BD8D00F8913C00F9954300F7964300F7964300F891
+      3C00FDB58200ECF0DC00BAE2A9000000000000000000CD987500EFE1D8000000
+      00000000000000000000FCAB6800FA994600F79D5100F89C5000F89C5000F595
+      4300FDD2AB0000000000000000000000000000000000CCBCB100BE6B3500D6CC
+      C50000000000C6AB9A00C16C3600D1C3BA000000000000000000000000000000
+      0000B3896E00C06B3600B6683600D8D0C90000000000C78D6800D7AF9600DFC0
+      AC00E0C0AC00E3C7B500000000000000000000000000D8CBC000C8B19D00C0B7
+      A900E8E6E200DBCDC500000000000000000000000000C78D6800D7AF9600DFC0
+      AC00E0C0AC00E1C6B40000000000000000000000000000000000000000000000
+      000000000000DCC9BE00000000000000000000000000CA926E00DFBFAB00EBD9
+      CD00E6D0C000F0DFD300F4D9C300FBC69A00FAC89F00FAC89F00FAC89F00FCC5
+      9600F8DEC700E3D4CC0000000000000000000000000000000000B3683800B081
+      62000000000000000000B2836500B66D4000B8734700B1724900000000000000
+      000000000000B1775200C0AA9C000000000000000000D9BEAD00CB8E6700C88C
+      6500C88C6500C88C6500E9D3C600000000000000000000000000000000000000
+      0000EAE1D900D49C7B00000000000000000000000000D9BEAD00CB8E6700C88C
+      6500C88C6500C98D6500E7D2C500000000000000000000000000000000000000
+      0000E8DDD300D39C7900000000000000000000000000D5B49D00CB8E6600C88C
+      6500C98C6500C58A6300EFE4DE00000000000000000000000000000000000000
+      0000E6CCBB00DBB69D0000000000000000000000000000000000BDA69600C46E
+      3700BBA190000000000000000000B8998500B8957E000000000000000000D2C3
+      BA00000000000000000000000000000000000000000000000000DCBEAB00C98D
+      6600C88C6500C88C6500E5CBBC00000000000000000000000000000000000000
+      0000E6D1C400C8936F0000000000000000000000000000000000DCBEAB00C98D
+      6600C88C6500C88C6500E5CBBC00000000000000000000000000000000000000
+      0000E6D0C300C8936F0000000000000000000000000000000000D6AF9600CA8D
+      6600C88D6600C88C6500E9D4C700000000000000000000000000000000000000
+      0000D9B6A100D4AC92000000000000000000000000000000000000000000B38B
+      7100C46D3700B3846500D4C8C1000000000000000000D7CAC200B3836400C46E
+      3700C7B3A500000000000000000000000000000000000000000000000000DBBE
+      AB00C98D6600C88C6500E7CFC000000000000000000000000000000000000000
+      0000E5D2C600C8926E000000000000000000000000000000000000000000DBBE
+      AB00C98D6600C88C6500E7CFC000000000000000000000000000000000000000
+      0000E5D2C600C8926E000000000000000000000000000000000000000000D3AD
+      9300CA8E6600C98D6600ECDACF00000000000000000000000000000000000000
+      0000DAB8A200D4AD920000000000000000000000000000000000000000000000
+      0000BFA79600B56A3900BF6B3500B5663300B5663300BF6B3500B56A3A00BEA7
+      9600000000000000000000000000000000000000000000000000000000000000
+      0000D8B8A300C98D6600DDBCA700F0E4DB00F0E3DB00F0E3DB00F0E4DB00F0E3
+      DA00D2A48800D3A98E0000000000000000000000000000000000000000000000
+      0000D8B8A300C98D6600DDBCA700F0E4DB00F0E3DB00F0E3DB00F0E4DB00F0E3
+      DA00D2A48800D3A98E0000000000000000000000000000000000000000000000
+      0000D2AA9000CA8D6600E2C5B200F2E6DE00F0E3DB00F0E3DB00F2E6DE00F0E3
+      DB00CC9A7800DEC0AC0000000000000000000000000000000000000000000000
+      00000000000000000000CBB5A700CCA08400CCA08400CBB4A700000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000DABAA600CB947000CA936F00CA936F00CA936F00CA936F00C992
+      6D00D0A285000000000000000000000000000000000000000000000000000000
+      000000000000DABAA600CB947000CA936F00CA936F00CA936F00CA936F00C992
+      6D00D0A285000000000000000000000000000000000000000000000000000000
+      000000000000D3AB9300CB957100CE9A7900CE9A7900CE9A7900CE9B7A00CB95
+      7100D5AC91000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000D19F7F00BC754900BE774A00BC77
+      4A00BC744700BE784B00BE794D00BC764900BE774A00BE774A00BC734600DDBA
+      A2000000000000000000000000000000000000000000D7AD9400DDBAA500DEBC
+      A600DEBCA600DEBCA600DEBCA600DEBBA500E0C0AD00E4C9B800E0C1AD00CB99
+      780000000000000000000000000000000000F9F4F000CE9C7B00CA916F00CA93
+      7000CA937000CA937000CB937200CA937000CA937000C9926C00D2A284000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000D6AB8F00BF7A
+      5000BC734600BB724500C88F6B00F8F3EF00D6AA8E00B4612E00B6663400B462
+      2F00CA926E00BA704200BC744600C17E5500B4632F00B6663400B35F2B00E8D0
+      C0000000000000000000000000000000000000000000DEBBA500000000000000
+      000000000000000000000000000000000000E8D4C700C8916E00B9704100B668
+      3700CA957300F0E3DA000000000000000000D3A58700CA947100F1E3DA00F0E1
+      D700F0E1D700EFDFD500F0E2D900F0E1D700EFDFD500F0E2D800C5865E00DFBD
+      A800000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000F7F2ED00C2815800CF9A7A00BC75
+      4800B6653300B6663400B4612E00C78C6700F7F0EB00B6673600B5633000BC75
+      4900EFDFD400B4663300BB744500E6CCBC00B5633100B5633100BC7547000000
+      00000000000000000000000000000000000000000000DEBCA600000000000000
+      000000000000000000000000000000000000C8987A00B5673500C9947200C790
+      6D00B7663400C08058000000000000000000CE9B7A00D6AC8F00000000000000
+      00000000000000000000F1E2D800000000000000000000000000D09C7A00DCB8
+      A000000000000000000000000000000000000000000000000000000000000000
+      000000000000F0E3D800EBD7CC000000000000000000F7F1ED00ECD8CB00B566
+      3500B6663300B6663400B6663400BC73470000000000E7CFBE00B3633000D6AB
+      8F0000000000D09F7F00DEBBA40000000000C2825900B6693700F3E7DF000000
+      00000000000000000000000000000000000000000000E0C0AB00F2E6E000DAB4
+      9B00DCB7A200DCB7A200DBB59D00E2C5B300F0E3DC000000000000000000D7B3
+      9B00B6663400BA7245000000000000000000CF9C7C00D8B09500F2E5DC00B86B
+      3D00BB714400F6EEE900D1A18100DFBFA800EEDED30000000000D0A27F00DBB6
+      9E0000000000000000000000000000000000000000000000000000000000D8AE
+      9500C3835B00C6886000CA916C00BD774A00E6CCBB00F7F0EB00B4653300B462
+      2F00B5643200B6663500B3612D00CE9C7B000000000000000000F5EBE6000000
+      000000000000F6EEE8000000000000000000F7F1ED00F6EFE900000000000000
+      00000000000000000000000000000000000000000000DEBDA80000000000F0E3
+      DA00F1E4DD00F1E4DD00F1E3DB00F3E7E10000000000D2A88D00B86C3D00B766
+      3400B6663400D3AC95000000000000000000CF9C7C00D5AA8C00000000000000
+      00000000000000000000E9D3C300E4C7B400D2A48600D7AE9300F8F3EE00ECDA
+      CD000000000000000000000000000000000000000000FAF6F400C78E6800D09E
+      7E00F3E7DF00000000000000000000000000F0E2D800BE7B5000DFBEA700ECD9
+      CB00BE784E00B25E2900B76A3900F7EDE8000000000000000000000000000000
+      0000EEDDD100BB724500BC784C00F5EBE4000000000000000000000000000000
+      00000000000000000000000000000000000000000000DFBFAA0000000000E0C0
+      AD00E2C3B100E2C3B100E1C2AF00E7CFC000D5AD9300B7663400B9704200D4AB
+      9100F0E3DC00000000000000000000000000CF9C7C00D8AF9300F7F1EC00CC97
+      7300CB947100D6AB8F0000000000D8AF9500C6876000B15A2500DDBBA4000000
+      00000000000000000000000000000000000000000000C78E6800DBB69C000000
+      000000000000F6EDE700DCB8A00000000000DDB9A200D4AC8E00E3C8B400F3E6
+      DE0000000000E3C6B300F1E3DB0000000000000000000000000000000000F8F2
+      EE00B76A3A00B5643100B4622E00C78C660000000000E9D2C300C78B66000000
+      00000000000000000000000000000000000000000000DFBFAA0000000000E1C4
+      B100E3C7B500E3C7B500E2C4B100EAD7CB00CFA08400B7663400C68E6C00E9D6
+      CB00D4AA9000DEC0AD000000000000000000CF9C7C00D7AD910000000000E5CB
+      B900E6CCBA00E5CCB90000000000F0E1D700DAB29700CB957000AF551F00E0C4
+      AF0000000000000000000000000000000000ECD8CC00CC977500000000000000
+      0000E0C0AB00C9906B00B86D3E00CE9B7900F3E8DF0000000000EDDCD000C58A
+      640000000000000000000000000000000000000000000000000000000000E6CC
+      BA00B4602D00B6663400B6663400B4612E00F4EAE300E4C9B600B25D2800BE79
+      4D00DAB49A00F5ECE600000000000000000000000000DFBEA90000000000E8D2
+      C400EAD4C800EAD4C800E9D4C700EEDDD200E7D1C400BA754900B6663400B766
+      3400B6663400CA9775000000000000000000CF9C7C00D6AB8F0000000000EEDE
+      D200EFDFD500EFDFD300EBD8CA00F6EDE700E7D2C100DDBAA100CA906A00B058
+      2300E3C5B200000000000000000000000000CE997900EDDBCF00000000000000
+      0000F5ECE60000000000D2A58700D2A08100E7CEBF000000000000000000C382
+      5B00F0E3D900000000000000000000000000000000000000000000000000D3A4
+      8700B4622F00B6663400B6663400B3612E00E5CBB900DCB9A000B4622F00B565
+      3200B4622F00B86C3C00E0C1AB000000000000000000DFBFAA0000000000DFBD
+      A900E0C1AD00E0C1AD00E0C1AD00E0C0AB00E2C5B30000000000DDBDA900C48E
+      6A00E9D4C700EDDBD0000000000000000000CF9C7C00D7AF9200F5ECE600CC97
+      7600CE9B7C00CE9B7C00CC997700D6AB900000000000E2C5B000D9B09300BA70
+      3F00B25E2A00EEDDD1000000000000000000C07E5400F1E5DB00000000000000
+      000000000000F4E9E200BD774B00C88E6900F9F4F1000000000000000000CA91
+      6D00E1C2AE00000000000000000000000000000000000000000000000000D7AC
+      9000B4612E00B6663400B6663400B35F2B00EAD6C800DEBBA400B5643200B769
+      3800B8693800B7673500B4622E00EBD7CA0000000000DFBFAA0000000000E4C8
+      B700E5CBBB00E5CBBB00E7CFC000E8D1C300E8D0C100E7CFC000E4CCBC00EAD8
+      CB00ECDBD100E1C2AF000000000000000000CF9C7C00D5AA8C00000000000000
+      0000000000000000000000000000000000000000000000000000DCBAA300CA8F
+      6900C17C5100CE9A7900F1E5DC0000000000C4845C00F3E8E000000000000000
+      0000EEDFD400C17D5200D09E7E0000000000000000000000000000000000C78B
+      6500E5CAB800000000000000000000000000000000000000000000000000F4EA
+      E300B2612E00B4612E00B4612D00BF7A5000F9F4F100E5CBBA00DFBDA700DFBE
+      A800E0BFAA00D9B29A00B6653300C081570000000000DFBDA90000000000EEDE
+      D400EEDED400EDDBD000DFBFAA00DAB49E00DBB79F00DBB79F00DBB49E00E7CE
+      BF00EDDBD000E1C2AF000000000000000000CF9C7C00D8B09500F3E8E100BC76
+      4800BE7B4C00BE7B4E00BE7B4E00BE784B00BE794C00F5ECE60000000000E1C3
+      AE00CE997700C98E6700CC967200EFE0D500D6AE9100E5CBBB00000000000000
+      0000DEB9A100D7AB8E00D9B19800F6EFEA00000000000000000000000000C280
+      5600F6ECE7000000000000000000000000000000000000000000000000000000
+      0000EFDFD400CE9B7A00D3A4850000000000F2E5DC00CD997600D09E7E00D09D
+      7E00D09F7E00CB947100B6663400BB73430000000000D7AE9600000000000000
+      00000000000000000000E4CAB900DBB59D00DCB8A100DCB8A100DBB59D00E6CC
+      BE00EDDBD100E1C2AF000000000000000000CE9B7A00D6AB8F00000000000000
+      0000000000000000000000000000000000000000000000000000DFBFA700F8F2
+      EE00E4C9B700CF9A7800E0C0AA00E1C2AF00F5ECE500C17F5600F8F3EE000000
+      0000F8F3EE00CC957200BE794F00D9B097000000000000000000E0C0AB00D4A5
+      8900000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000EEDCD000DAB59C00D5A98B00D8AE9300D8AE9300D8AE
+      9300D9B09500D2A38300B5643200C07F550000000000CA927000B6663400B465
+      3300BC764A0000000000EAD5C800DFBFAA00E1C2AF00E1C2AF00E0C0AB00E9D3
+      C500ECDAD000E1C2AF000000000000000000D4A78900C5896200E8D1C100E7CF
+      BE00E7CFBE00E7CFBE00E7CFBE00E7CFBE00E7CFBE00E8D0C000C07D5100DFBD
+      A70000000000DCB9A200DFBEA9000000000000000000D9B69B00C48B6400F7F1
+      EC000000000000000000ECDACD000000000000000000E2C6B200BD7A4E00FAF5
+      F200000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000DEBCA500B15C2700B4622F00B4633000B4623000B462
+      3000B4623000B4623000B4622F00E7CEBE000000000000000000C88E6A00B666
+      3400B6663400EEDED40000000000000000000000000000000000000000000000
+      0000ECDACE00E1C2AF000000000000000000F8F2EE00CB947000C07F5500C282
+      5900C2825900C2825900C2825900C2825900C2825900C07E5400CF9C7B000000
+      0000000000000000000000000000000000000000000000000000D6AD9200BE7A
+      4E00E0C0AB00F1E5DC00F3E9E100E9D3C400CE9B7A00BE7B5000F7F0EB000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000D6AB8F00B5643100B4612E00B5643100B563
+      3000B4622F00B3633200DAB49A0000000000000000000000000000000000CA93
+      7000B6663400EEDED40000000000000000000000000000000000000000000000
+      0000ECDACE00E1C2AF0000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000F5EC
+      E500D6AB8F00C4845C00C17F5600CA926E00E6CCBB0000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000F3E8E000D9B19600C6896100C78C
+      6600D9B29900F3E8E00000000000000000000000000000000000000000000000
+      0000CD987600D2A38700DCB9A200DBB79F00DBB79F00DBB79F00DBB79F00DCB8
+      A100D4A78A00ECDACE000000000000000000424D3E000000000000003E000000
+      2800000040000000300000000100010000000000800100000000000000000000
+      000000000000000000000000FFFFFF00800F000000000000BF03000000000000
+      BF030000000000008063000000000000A083000000000000A007000000000000
+      A003000000000000A003000000000000A043000000000000A003000000000000
+      A003000000000000BC030000000000008403000000000000C3F3000000000000
+      E3F3000000000000F003000000000000807F807F807FFFFF9F8F9C038007F81F
+      9F0398039803F00F9E01999B9823E1879C01990B9803F6639C019807990B9833
+      9C019823980B0D119C019971982306119E0199F199FB88209F039C019C0788F0
+      838383FB8003CC3981F381F381F3C66FC1F3C1F3C1F3E187E1F3E1F3E1F3F00F
+      F003F003F003FC3FF807F807F807FFFFFFFFFFFF000F800F001FFFC0000FBF03
+      000FFF00001FBF033DCFF980891F8063004FE000DB3FA0833C0F8700F0FFA007
+      021F9909E09FA003220F304FE003A00320073467E001A04300833867E000A003
+      3FC131E7E000A003002030E7F100BC033FC010CFFC00840300098D8FFC00C3F3
+      001FC01FFE01E3F3FFFFE07FFF03F00300000000000000000000000000000000
+      000000000000}
+  end
+  object ImageListReason: TImageList
+    Left = 480
+    Top = 168
+    Bitmap = {
+      494C010105000E00080010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      0000000000003600000028000000400000004000000001002000000000000040
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000D8DFFD004E6BFD004463FD004765
+      FD004765FD004765FD004765FD004765FD004765FD004463FD005873FD00DEE4
+      FD00FDFDFD00FDFDFD00FDFDFD00FDFDFD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000007E93FD002245F800A9B7FD00A5B5
+      FD00A4B3FD00A1B0FD00ACBAFD00A4B3FD00A0AFFD00A5B5FD001F42F4007B90
+      FD00FDFDFD00FDFDFD00FDFDFD00FDFDFD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000007B91FD004B69FD00FDFDFD00E7EB
+      FD00EAEDFD00EFF2FD00ACBAFD00E8ECFD00FDFDFD00FDFDFD003E5FFD00768D
+      FD00FDFDFD00FDFDFD00FDFDFD00FDFDFD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000007C92FD005571FD00BBC6FD001A3D
+      EF002245F800BDC8FD004866FD008FA1FD009BABFD00FDFDFD004563FD00738A
+      FD00FDFDFD00FDFDFD00FDFDFD00FDFDFD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000007C92FD004A67FD00FDFDFD00F1F3
+      FD00EDF1FD00FCFCFD00869AFD008B9EFD003859FD004A67FD00C4CEFD00A1B0
+      FD00FDFDFD00FDFDFD00FDFDFD00FDFDFD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000007C92FD00516EFD00CCD4FD004261
+      FD003E5FFD00637CFD00C4CEFD004B69FD003455FD000929C600627BFD00FBFB
+      FD00FDFDFD00FDFDFD00FDFDFD00FDFDFD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000007C92FD004E6BFD00E8ECFD0094A5
+      FD0092A4FD0094A5FD00F1F3FD0099AAFD006E86FD00536FFD000928BE00637C
+      FD00FDFDFD00FDFDFD00FDFDFD00FDFDFD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000007C92FD004C6AFD00F1F3FD00A9B7
+      FD00A9B7FD00A9B7FD0099AAFD00C2CDFD008094FD008397FD004362FD000929
+      C800788EFD00FDFDFD00FDFDFD00FDFDFD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000007C92FD00536FFD00C7D1FD003253
+      FD003556FD003657FD003455FD004866FD00DAE0FD008094FD00768DFD001C3F
+      F100092ACD00889BFD00FDFDFD00FDFDFD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000007C92FD004A67FD00FDFDFD00F4F6
+      FD00F2F4FD00F2F4FD00F2F4FD00EFF2FD00ECEFFD00FCFCFD005B76FD003455
+      FD002245F8004866FD00B4C0FD00FDFDFD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000007C92FD005571FD00B9C4FD001E41
+      F3002245F8002245F8002245F8002245F8002245F800D1D7FD00F6F7FD00788E
+      FD004866FD003E5FFD004060FD00B0BEFD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000007B91FD004B69FD00FDFDFD00E1E6
+      FD00E1E6FD00E1E6FD00E1E6FD00E1E6FD00E3E7FD00FDFDFD006E86FD00CED5
+      FD00798FFD004C6AFD007B90FD007B91FD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000008094FD001F42F40099AAFD0097A8
+      FD0097A8FD0097A8FD0097A8FD0097A8FD0097A8FD0097A8FD00193CEE008094
+      FD00F9FAFD00607AFD007E93FD00F3F5FD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000DAE0FD00516EFD004463FD004765
+      FD004765FD004765FD004765FD004765FD004765FD004463FD005D78FD00E1E6
+      FD00FDFDFD00F6F7FD00F9FAFD00FDFDFD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000C0998C009A5943008A3E25008A3E250099564100BD938600EDE3
+      DF0000000000000000000000000000000000CE7C4A00E4BDA40000000000EBCC
+      B900E9C7B200F5E7E00000000000000000000000000000000000D99B7500CB74
+      3E00CE804F00CE815000CB743E00D6946A000000000000000000000000000000
+      000000000000C0998C009A5943008A3E25008A3E250099564100BD938600EDE3
+      DF000000000000000000000000000000000000000000DDD6D100C6BCB300C2B5
+      AD00C2B4AB00CAC2BB00E7E6E700F5F4F400EDECEC00EDEBEB00ECEBEB00ECEB
+      EB00EDECEB00F1F0F0000000000000000000000000000000000000000000C097
+      890091442800A7552700B7612700C0692900C0692900B7622800A85628009345
+      2700BF948700000000000000000000000000E4BBA200C86D3400CB754000C96B
+      3000C96B3000C96F3600E4BBA200000000000000000000000000EACAB700C866
+      2900D48C5F00D5916600C8652800E6C0A900000000000000000000000000C097
+      890091442800A7552700B7612700C0692900C0692900B7622800A85628009345
+      2700BF948700000000000000000000000000D0C1B700AA7C6600AD7E6700BA93
+      8200B89480009A785D00BAAEA400C1B4A800C3B5A900C3B5A900C2B5A900C3B5
+      A900C1B3A800BDB2A800E5E3E200000000000000000000000000BD908100A152
+      2A00BE6A2B00C26D2D00C26D2D00C26D2D00C26D2D00C26D2D00C26D2D00C06B
+      2D00A3532A00BD908100000000000000000000000000CB753F00C96A2F00C96B
+      3000C96B3000C96B3000C96B3000D8987100CA723B00F3E3DB0000000000D288
+      5B00DA9C7500DBA37F00CE7F4D00000000000000000000000000BD908100A152
+      2A00BE6A2B00C26D2D00C26D2D00C26D2D00C26D2D00C26D2D00C26D2D00C06B
+      2D00A3532A00BD9081000000000000000000C0A99A00B4622F00B4622F00CCB0
+      A200CAB0A300BFA89900EBE6E200FDFCFA00FDFCFB00FDFCFB00FDFCFB00FBFB
+      F800F6F6F200D2C7BA00D2CBC7000000000000000000C49B8C00A4573000C471
+      3200C4713200C4713200C4713200C4713200C4713200C4713200C4713200C471
+      3200C4713200A6582F00C196870000000000EACBB900C96B3000C96B3000C96B
+      3000C96B3000C96B3000C96B3000C96A2F00E2B194000000000000000000EFDA
+      CB00D7956C00D99B7400ECD0BE000000000000000000C49B8C00A4573000C471
+      3200C4713200C4713200C4713200FFFFFF00FFFFFF00C4713200C4713200C471
+      3200C4713200A6582F00C196870000000000B99F8F00B4622F00B4622F00B462
+      2F00AD7A6500D5C7BD00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FEFE
+      FE00F8F9F700D8CFC500BAACA100F7F6F600000000009E553600C3733600C776
+      3800C7763800C7763800C7763800FCF9F600FCF9F600C7763800C7763800C776
+      3800C7763800C67538009E553500ECE0DB00E8C5B000C96B3000C96B3000C96B
+      3000C96B3000C96B3000C96B3000E3B499000000000000000000000000000000
+      0000D5916700D18759000000000000000000000000009E553600C3733600C776
+      3800C7763800C7763800C7763800FFFFFF00FFFFFF00C7763800C7763800C776
+      3800C7763800C67538009E553500ECE0DB00B3988600B4622F00B4622F00B462
+      2F00B07D6900D2C4B800FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00F8F7F500F2F2EB00BAAC9F00EDECEB00CBA49500B56D4200CA7B3E00CA7B
+      3E00CA7B3E00CA7B3E00CA7B3E00FCFAF700FCFAF700CA7B3E00CA7B3E00CA7B
+      3E00CA7B3E00CA7B3E00B76E4200C49B8A00F5E8E000C86C3200C96B2F00C96B
+      3000C96B3000C96B3000E3B49900000000000000000000000000000000000000
+      000000000000000000000000000000000000CBA49500B56D4200CA7B3E00CA7B
+      3E00CA7B3E00CA7B3E00CA7B3E00B36E1F00B36E1F00CA7B3E00CA7B3E00CA7B
+      3E00CA7B3E00CA7B3E00B76E4200C49B8A00AE8F7E00B4622F00B4622F00B462
+      2F00B07D6900D2C4B800FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00F9F9F700F3F2EC00C6B6AA00DEDBD800B1765D00C37A4300CD814400CD81
+      4400CD814400CD814400CD814400FCFAF700FCFAF700CD814400CD814400CD81
+      4400CD814400CD814400C57A4300AC6F540000000000E5BCA200C76B3100C96B
+      3000C96B3000E3B498000000000000000000EED5C500D6926700000000000000
+      000000000000F4E7DE000000000000000000B1765D00C37A4300CD814400CD81
+      4400CD814400CD814400CD814400FFFFFF00FFFFFF00CD814400CD814400CD81
+      4400CD814400CD814400C57A4300AC6F5400A9847000B4622F00B4622F00B462
+      2F00B27E6B00D5C7BC00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FBFAFA00F8F9F600CDC1B400C6BDB600A7634500CD844B00D0874B00D087
+      4B00D0874B00D0874B00D0874B00FCFAF700FCFAF700D0874B00D0874B00D087
+      4B00D0874B00D0874B00D0874C00A56041000000000000000000D8987100C96A
+      2F00E3B49800000000000000000000000000F6EBE400CD7A4800D18454000000
+      0000E3B49800CB743D000000000000000000A7634500CD844B00D0874B00D087
+      4B00D0874B00D0874B00D0874B00FFFFFF00FFFFFF00D0874B00D0874B00D087
+      4B00D0874B00D0874B00D0874C00A5604100A98A7500A77D6800A87D6900A87D
+      6900A3796200AC937E00DFD7D100FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FBFDFB00ECE9E100C9BCB100AA644400D7976100D48D5200D48D
+      5200D48D5200D48D5200D48D5200FCFAF700FCFAF700D48D5200D48D5200D48D
+      5200D48D5200D48D5200D7955F00AA6444000000000000000000CB743D00E2B1
+      94000000000000000000EED4C500000000000000000000000000D1865800CD79
+      4500C96B3000D89871000000000000000000AA644400D7976100D48D5200D48D
+      5200D48D5200D48D5200D48D5200D48D5200FFFFFF00FFFFFF00D48D5200D48D
+      5200D48D5200D48D5200D7955F00AA64440000000000F0ECE900F1ECE800F0EC
+      E800F0ECE800F4F1EF00DED5CD00EBE6E100FFFFFF00F9FAF800D9CFC600CEC3
+      B800CFC4B800CEC2B700CBC0B500E7DED800BB836700D59E7300D7935800D793
+      5800D7935800D7935800D7935800C1823900C1823900D7935800D7935800D793
+      5800D7935800D7935800D6A07500B97F62000000000000000000F3E3D9000000
+      00000000000000000000D48F6200CD7A48000000000000000000E0AD8E00C96A
+      2F00C96B3000C76B3100E5BCA20000000000BB836700D59E7300D7935800D793
+      5800D7935800D7935800D7935800D7935800D7935800FFFFFF00FFFFFF00D793
+      5800D7935800D7935800D6A07500B97F62000000000000000000000000000000
+      0000000000000000000000000000CFC4B700FBFCFB00F0EFE900B9A69900DFDA
+      D60000000000000000000000000000000000D5B29F00CD997800DB9C6400DA98
+      5E00DA985E00DA985E00DA985E00FFFFFF00FFFFFF00DA985E00DA985E00DA98
+      5E00DA985E00DB9A6200CD987700D5B29F000000000000000000000000000000
+      0000000000000000000000000000D2855500D0855500E0AD8E00CA6B3000C96B
+      3000C96B3000C96B2F00C86C3200F5E8E000D5B29F00CD997800DB9C6400DA98
+      5E00DA985E00FFFFFF00DA985E00DA985E00DA985E00FFFFFF00FFFFFF00DA98
+      5E00DA985E00DB9A6200CD987700D5B29F000000000000000000000000000000
+      0000000000000000000000000000F1EDE900D9D0C800FDFDFC00C9BDB100E9E8
+      E7000000000000000000000000000000000000000000B7765200E3B79200DD9E
+      6500DD9D6400DD9D6400DD9D6400FFFFFF00FFFFFF00DD9D6400DD9D6400DD9D
+      6400DD9D6400E4B79100B9795500000000000000000000000000000000000000
+      000000000000000000000000000000000000CB764100C96A2F00C96B3000C96B
+      3000C96B3000C96B3000C96B3000E8C5B00000000000B7765200E3B79200DD9E
+      6500DD9D6400BC7F3200FFFFFF00FFFFFF00FFFFFF00FFFFFF00BC7F3200DD9D
+      6400DD9D6400E4B79100B9795500000000000000000000000000000000000000
+      000000000000000000000000000000000000CEBFB500FFFFFF00CEC2B7000000
+      00000000000000000000000000000000000000000000D9B6A200C78F6C00EAC2
+      9E00E0A46E00DFA16900DFA16900C4883F00C4883F00DFA16900DFA16900E0A3
+      6D00EAC19C00C9937000D7B39E00000000000000000000000000000000000000
+      0000000000000000000000000000E3B49800C96B3000C96B3000C96B3000C96B
+      3000C96B3000C96B3000C96B3000EACBB90000000000D9B6A200C78F6C00EAC2
+      9E00E0A46E00DFA16900BD813400BD813400BD813400BD813400DFA16900E0A3
+      6D00EAC19C00C9937000D7B39E00000000000000000000000000000000000000
+      000000000000000000000000000000000000CEC0B600FCFDFB00D4C8BE000000
+      0000000000000000000000000000000000000000000000000000D6B09900C890
+      6C00EAC8A900E9BD9400E6B38400E3AA7600E3AA7500E6B38300E9BC9200EBC8
+      AA00CB957100D5AE990000000000000000000000000000000000000000000000
+      00000000000000000000F3E3D900CA723B00D8997100C96B3000C96B3000C96B
+      3000C96B3000C96A2F00CB753F00000000000000000000000000D6B09900C890
+      6C00EAC8A900E9BD9400E6B38400E3AA7600E3AA7500E6B38300E9BC9200EBC8
+      AA00CB957100D5AE990000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000D8CDC300C0B3A400F4F1EF000000
+      000000000000000000000000000000000000000000000000000000000000DBB9
+      A400C0805900D4A38200DEB69700E9C8AA00E9C8AB00DFB79800D6A58400C181
+      5A00DAB6A1000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000E4BBA200C96F3600C96B
+      3000C96B3000CB754000C86D3400E4BDA600000000000000000000000000DBB9
+      A400C0805900D4A38200DEB69700E9C8AA00E9C8AB00DFB79800D6A58400C181
+      5A00DAB6A1000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000DFC1AD00D2A68A00C58C6800C58B6600D2A48800DEBDAA000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000F5E7E000E9C7
+      B200EBCCB90000000000E4BBA200CE7C4A000000000000000000000000000000
+      000000000000DFC1AD00D2A68A00C58C6800C58B6600D2A48800DEBDAA000000
+      000000000000000000000000000000000000424D3E000000000000003E000000
+      2800000040000000400000000100010000000000000200000000000000000000
+      000000000000000000000000FFFFFF0000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000FFFF0000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000FFFF000000000000FFFFF80F23C0F80F8003E00701C0E007
+      0001C0038021C00300018001006180010000800000F380000000000001FF0000
+      00000000833B000000000000C713000000000000CDC3000080000000DCC10000
+      FE0F0000FE000000FE0F8001FF008001FF1F8001FE008001FF1FC003FC01C003
+      FF1FE007FF80E007FFFFF81FFFC4F81F00000000000000000000000000000000
+      000000000000}
+  end
+  object LSheet: TcxStyleRepository
+    Left = 689
+    Top = 161
+    PixelsPerInch = 96
+    object cxStyle1: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 10930928
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle2: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16247513
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle3: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16774644
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle4: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16247513
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle5: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle6: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clNavy
+    end
+    object cxStyle7: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 14872561
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle8: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle9: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12937777
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle10: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle11: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle12: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle13: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clNavy
+    end
+    object cxStyle14: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12937777
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle15: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle16: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle17: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12937777
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clYellow
+    end
+    object cxStyle18: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle19: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16511978
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle20: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle21: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle22: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clNavy
+    end
+    object cxStyle23: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 14872561
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle24: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle25: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12937777
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle26: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle27: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle28: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle29: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clNavy
+    end
+    object cxStyle30: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12937777
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle31: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle32: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12307669
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle33: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14542570
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle34: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12307669
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle35: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 6852002
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle36: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 6852002
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle37: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12307669
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle38: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clTeal
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle39: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12307669
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle40: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clTeal
+    end
+    object cxStyle41: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clTeal
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle42: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 11055248
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle43: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle44: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 11055248
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle45: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14211272
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle46: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 11055248
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle47: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 7897176
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = 524288
+    end
+    object cxStyle48: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4194368
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle49: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 11055248
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle50: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 7897176
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle51: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 11055248
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle52: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = 7897176
+    end
+    object cxStyle53: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 7897176
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle54: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clSilver
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle55: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle56: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clSilver
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle57: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle58: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clSilver
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle59: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clGray
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clSilver
+    end
+    object cxStyle60: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 10841658
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle61: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clSilver
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle62: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clBtnShadow
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle63: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clSilver
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle64: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clNavy
+    end
+    object cxStyle65: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clNavy
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle66: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle67: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16247513
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle68: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16247513
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle69: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16247513
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle70: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle71: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clNavy
+    end
+    object cxStyle72: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 14872561
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle73: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle74: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12937777
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle75: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle76: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle77: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle78: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clNavy
+    end
+    object cxStyle79: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12937777
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle80: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle81: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16247513
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle82: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16247513
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle83: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle84: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle85: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clNavy
+    end
+    object cxStyle86: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 14872561
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle87: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle88: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12937777
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle89: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle90: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle91: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle92: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clNavy
+    end
+    object cxStyle93: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12937777
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle94: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle95: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle96: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12937777
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = 4707838
+    end
+    object cxStyle97: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 8454016
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle98: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16247513
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle99: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clInfoBk
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle100: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle101: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clNavy
+    end
+    object cxStyle102: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 14872561
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle103: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle104: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12937777
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle105: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle106: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle107: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle108: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clNavy
+    end
+    object cxStyle109: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 8454016
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle110: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle111: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clSilver
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle112: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12937777
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle113: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle114: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle115: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle116: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle117: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle118: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14211288
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle119: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12937777
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle120: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle121: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle122: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle123: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle124: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle125: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle126: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 4227072
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle127: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4227072
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle128: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle129: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 14679999
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle130: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle131: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle132: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle133: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle134: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle135: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = clSilver
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle136: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle137: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle138: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle139: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle140: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12713983
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle141: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 4227072
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle142: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4227072
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle143: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle144: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 14679999
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle145: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle146: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle147: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle148: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle149: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle150: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = clSilver
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle151: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle152: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle153: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle154: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle155: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12713983
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle156: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16772844
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle157: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle158: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16630203
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle159: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 10944511
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle160: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14932430
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle161: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16772844
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle162: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle163: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16766894
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clNavy
+    end
+    object cxStyle164: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14872561
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle165: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle166: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16630203
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle167: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clBtnFace
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle168: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle169: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clBtnFace
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle170: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle171: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clHighlight
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle172: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle173: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle174: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 8453888
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clDefault
+    end
+    object cxStyle175: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 8453888
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clDefault
+    end
+    object cxStyle176: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12279296
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle177: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 15066597
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clDefault
+    end
+    object cxStyle178: TcxStyle
+      AssignedValues = [svFont, svTextColor]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clDefault
+    end
+    object cxStyle179: TcxStyle
+      AssignedValues = [svFont, svTextColor]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clDefault
+    end
+    object cxStyle180: TcxStyle
+      AssignedValues = [svFont, svTextColor]
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clDefault
+    end
+    object cxStyle181: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle182: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 10944511
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle183: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16247513
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle184: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle185: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle186: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16766894
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clNavy
+    end
+    object cxStyle187: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14872561
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle188: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle189: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clSilver
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle190: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12713860
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle191: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle192: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle193: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle194: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12713860
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle195: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle196: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle197: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12279296
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle198: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 10944511
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle199: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 15790320
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle200: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle201: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle202: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 16766894
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clNavy
+    end
+    object cxStyle203: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14872561
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle204: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle205: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clSilver
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle206: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12713860
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle207: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 4707838
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle208: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 15451300
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle209: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 14811135
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle210: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = 12713860
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clBlack
+    end
+    object cxStyle211: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = 14932430
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clHotLight
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+    end
+    object cxStyle212: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clBtnFace
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clHotLight
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clHighlight
+    end
+    object cxStyle213: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clInfoBk
+      Font.Charset = RUSSIAN_CHARSET
+      Font.Color = clRed
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clRed
+    end
+    object cxStyle214: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clBtnFace
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clHotLight
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clHighlight
+    end
+    object cxStyle215: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clHighlight
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle216: TcxStyle
+      AssignedValues = [svColor]
+      Color = 15263999
+    end
+    object DBCardStyle: TcxGridCardViewStyleSheet
+      Styles.Background = cxStyle110
+      Styles.Content = cxStyle113
+      Styles.ContentEven = cxStyle114
+      Styles.ContentOdd = cxStyle115
+      Styles.Inactive = cxStyle116
+      Styles.IncSearch = cxStyle117
+      Styles.Selection = cxStyle119
+      Styles.CaptionRow = cxStyle111
+      Styles.CardBorder = cxStyle112
+      Styles.RowCaption = cxStyle118
+      BuiltIn = True
+    end
+    object DBBandedStyle: TcxGridBandedTableViewStyleSheet
+      Styles.Background = cxStyle199
+      Styles.Content = cxStyle99
+      Styles.ContentEven = cxStyle160
+      Styles.ContentOdd = cxStyle99
+      Styles.FilterBox = cxStyle162
+      Styles.Inactive = cxStyle167
+      Styles.IncSearch = cxStyle168
+      Styles.Selection = cxStyle171
+      Styles.Footer = cxStyle163
+      Styles.Group = cxStyle164
+      Styles.GroupByBox = cxStyle165
+      Styles.Header = cxStyle211
+      Styles.Indicator = cxStyle169
+      Styles.Preview = cxStyle170
+      Styles.BandBackground = cxStyle157
+      Styles.BandHeader = cxStyle211
+      BuiltIn = True
+    end
+    object DBOtherStyle: TcxGridBandedTableViewStyleSheet
+      Styles.Content = cxStyle178
+      Styles.ContentEven = cxStyle179
+      Styles.ContentOdd = cxStyle180
+      Styles.Inactive = cxStyle174
+      Styles.Selection = cxStyle175
+      Styles.Header = cxStyle177
+      Styles.Indicator = cxStyle173
+      Styles.BandHeader = cxStyle176
+      BuiltIn = True
+    end
+    object DBMonitorStyle: TcxGridBandedTableViewStyleSheet
+      Caption = 'DBBandedStyle'
+      Styles.Background = cxStyle195
+      Styles.Content = cxStyle198
+      Styles.ContentEven = cxStyle199
+      Styles.ContentOdd = cxStyle200
+      Styles.FilterBox = cxStyle201
+      Styles.Inactive = cxStyle206
+      Styles.IncSearch = cxStyle207
+      Styles.Selection = cxStyle210
+      Styles.Footer = cxStyle202
+      Styles.Group = cxStyle203
+      Styles.GroupByBox = cxStyle204
+      Styles.Header = cxStyle205
+      Styles.Indicator = cxStyle208
+      Styles.Preview = cxStyle209
+      Styles.BandBackground = cxStyle196
+      Styles.BandHeader = cxStyle197
+      BuiltIn = True
+    end
+    object GridTableViewStyle: TcxGridTableViewStyleSheet
+      BuiltIn = True
+    end
+    object MyStyle: TcxGridTableViewStyleSheet
+      Styles.Background = cxStyle100
+      Styles.Content = cxStyle99
+      Styles.ContentEven = cxStyle99
+      Styles.ContentOdd = cxStyle99
+      Styles.Inactive = cxStyle62
+      Styles.Selection = cxStyle215
+      Styles.Footer = cxStyle214
+      Styles.GroupByBox = cxStyle189
+      Styles.Header = cxStyle214
+      BuiltIn = True
+    end
+    object MyStyleTree: TcxTreeListStyleSheet
+      Styles.Background = cxStyle100
+      Styles.Content = cxStyle99
+      Styles.Inactive = cxStyle62
+      Styles.Selection = cxStyle215
+      Styles.BandBackground = cxStyle214
+      Styles.BandContent = cxStyle99
+      Styles.BandHeader = cxStyle212
+      Styles.ColumnFooter = cxStyle212
+      Styles.ColumnHeader = cxStyle214
+      Styles.ContentEven = cxStyle99
+      Styles.ContentOdd = cxStyle99
+      Styles.Footer = cxStyle214
+      BuiltIn = True
+    end
+  end
+  object ImageListOther: TImageList
+    Left = 372
+    Top = 240
+    Bitmap = {
+      494C010101000500040010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      0000000000003600000028000000400000002000000001002000000000000020
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00007D7BE300D2D2F30000000000000000000000000000000000DEDEE6004D4B
+      CA00CFCEE2000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000BAB8
+      F1000906F800211FDD00E0E0EF00000000000000000000000000716FDB003C3A
+      D400000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000BDBD
+      E9001919EC000A0AFA006767D8000000000000000000ADADE6000D0CEC007979
+      CE00000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000696BD900161BF8001016ED00C3C2EE00CAC9EF00272CF4002B2DE100E9E9
+      F300000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000E1E1F100575CDF001F2FFC003A43EF003946F300212FF600AFAEEB000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000B8B7EC004553F3001D34F8001A2FF7008888EB00000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000B3B4F9005564F5002D47F6003C54F8003F58F600767DF100000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000A4AA
+      E8003553F6002F51F8004762F8008487F5008F95F6005874F8006076F600CACD
+      FB00000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000495D
+      FB004B6FF8005C73F8009394F70000000000000000009F9FF7006B7DF700687B
+      F800AAAFF9000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000008F8F
+      F6006268F500A5A2F70000000000000000000000000000000000E5E5FB008887
+      F500666AF5000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000424D3E000000000000003E000000
+      2800000040000000200000000100010000000000000100000000000000000000
+      000000000000000000000000FFFFFF0000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000FFFF000000000000FFFF000000000000
+      FFFF000000000000F3C7000000000000E1CF000000000000E18F000000000000
+      F00F000000000000F01F000000000000F83F000000000000F03F000000000000
+      E00F000000000000E187000000000000E3C7000000000000FFFF000000000000
+      FFFF000000000000FFFF00000000000000000000000000000000000000000000
+      000000000000}
+  end
+end

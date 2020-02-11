@@ -1,0 +1,1 @@
+select * from COMPANIES_PARAM_KIND

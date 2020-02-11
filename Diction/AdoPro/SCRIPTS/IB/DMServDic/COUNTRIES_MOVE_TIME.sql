@@ -1,0 +1,3 @@
+select * from COUNTRIES_MOVE_TIME
+where ID_COUNTRY = :COUNTRYID
+

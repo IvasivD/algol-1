@@ -1,0 +1,107 @@
+<HTML>
+<!-- Sitemap 1.0 -->
+<OBJECT type="text/site properties">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="вхідна інформація">
+		<param name="Name" value="Курси валют">
+		<param name="Local" value="html/curr9xgl.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="імпорт">
+			<param name="Local" value="html/curr4yyc.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="графік зміни курсу грошової одиниці">
+		<param name="Name" value="Графік зміни курсу грошової одиниці">
+		<param name="Local" value="html/curr2sms.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="друк звітів">
+		<param name="Name" value="Перегляд звітів">
+		<param name="Local" value="html/curr43w7.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="звіти">
+		<param name="See Also" value="звіти">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="графік">
+			<param name="Local" value="html/curr2sms.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="друк">
+			<param name="Local" value="html/curr43w7.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="крос-курси валют">
+			<param name="Local" value="html/curr07n7.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="на дату">
+			<param name="Local" value="html/curr1d9h.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="перегляд">
+			<param name="Local" value="html/curr43w7.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="крос-курси валют">
+		<param name="Name" value="Крос-курси валют">
+		<param name="Local" value="html/curr07n7.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="курс на дату">
+		<param name="Name" value="Курси валют на дату">
+		<param name="Local" value="html/curr1d9h.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="курси валют">
+		<param name="Name" value="Курси валют">
+		<param name="Local" value="html/curr9xgl.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="комерційні курси">
+			<param name="Local" value="html/curr1d0l.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="панель інструментів">
+		<param name="Name" value="Панель інструментів">
+		<param name="Local" value="html/curr09f6.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="перегляд">
+		<param name="See Also" value="перегляд">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="зведений перегляд">
+			<param name="Local" value="html/curr9xgl.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="комерційні курси">
+			<param name="Local" value="html/curr1d0l.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="курси валют">
+			<param name="Local" value="html/curr9xgl.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="статистика зміни курсу">
+		<param name="Name" value="Таблиця статистики курсу грошової одиниці">
+		<param name="Local" value="html/curr9dt8.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="імпорт інформації від банку">
+		<param name="Name" value="Імпорт інформації від банку">
+		<param name="Local" value="html/curr4yyc.htm">
+		</OBJECT>
+</UL></HTML>

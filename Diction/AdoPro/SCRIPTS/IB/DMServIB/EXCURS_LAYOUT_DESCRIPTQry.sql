@@ -1,0 +1,2 @@
+select * from EXCURS_LAYOUT_DESCRIPT
+where ID_EXCURSION=:EID

@@ -1,0 +1,775 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{65593B5B-961E-40FA-B7DF-F4ADA5BB4463}</ProjectGuid>
+			<MainSource>TestDict.dpr</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<ProjectVersion>12.0</ProjectVersion>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_MapFile>3</DCC_MapFile>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_UNSAFE_TYPE>true</DCC_UNSAFE_TYPE>
+			<DCC_UsePackage>VCL50;VCLX50;VCLSMP50;VCLDB50;VCLADO50;ibevnt50;VCLBDE50;VCLDBX50;QRPT50;TEEUI50;TEEDB50;TEE50;DSS50;TEEQR50;VCLIB50;VCLMID50;VCLIE50;INETDB50;INET50;NMFAST50;WEBMID50;dclocx50;F1ActionPack;dclaxserver50</DCC_UsePackage>
+			<DCC_Platform>x86</DCC_Platform>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_DependencyCheckOutputName>TestDict.exe</DCC_DependencyCheckOutputName>
+			<DCC_UnitSearchPath>$(DELPHI)\Lib\Debug;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<DCC_UNSAFE_CODE>true</DCC_UNSAFE_CODE>
+			<DCC_K>false</DCC_K>
+			<DCC_F>false</DCC_F>
+			<DCC_S>false</DCC_S>
+			<DCC_N>true</DCC_N>
+			<DCC_WriteableConstants>true</DCC_WriteableConstants>
+			<DCC_UNSAFE_CAST>true</DCC_UNSAFE_CAST>
+			<DCC_E>false</DCC_E>
+			<DCC_SymbolReferenceInfo>1</DCC_SymbolReferenceInfo>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="TestDict.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="ServMod.pas">
+				<Form>DMServ</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="ZTDlg.pas">
+				<Form>ZTourDialog</Form>
+			</DCCReference>
+			<DCCReference Include="ImgPrevw.pas"/>
+			<DCCReference Include="ZTBrws.pas">
+				<Form>ZTourBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="ZTTwins.pas">
+				<Form>ZTourTwinBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="ReklamBr.pas">
+				<Form>ReklamaBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="CrncyBr.pas">
+				<Form>CurrencyBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="CrncyForm.pas">
+				<Form>CurrencyEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="RoomTypFrm.pas">
+				<Form>RoomTypeEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="RoomTypBr.pas">
+				<Form>RoomTypeBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="HtlCatFrm.pas">
+				<Form>HotelCategoryEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="HtlCatBr.pas">
+				<Form>HotelCategoryBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="HtlGrpFrm.pas">
+				<Form>HotelGroupEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="HtlGrpBr.pas">
+				<Form>HotelGroupBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="CntryForm.pas">
+				<Form>CountryEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="CityBr.pas">
+				<Form>Text</Form>
+			</DCCReference>
+			<DCCReference Include="HlpConsts.pas"/>
+			<DCCReference Include="SrvGrpDlg.pas">
+				<Form>ServGroupEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="ServFrm.pas">
+				<Form>ServiceEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="ServBr.pas">
+				<Form>ServiceBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="DrvKindDlg.pas">
+				<Form>DriveKindEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="DriveDlg.pas">
+				<Form>DriveEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="DrvLego.pas">
+				<Form>DriveConstructForm</Form>
+			</DCCReference>
+			<DCCReference Include="FloorDlg.pas">
+				<Form>DriveFloorEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="DriveBr.pas">
+				<Form>DriveBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="HotelMast.pas">
+				<Form>HotelMasterForm</Form>
+			</DCCReference>
+			<DCCReference Include="HotelBr.pas">
+				<Form>HotelBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="CompBr.pas">
+				<Form>CompanyBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="AddrDlg.pas">
+				<Form>AddressDlg</Form>
+			</DCCReference>
+			<DCCReference Include="CompFrm.pas">
+				<Form>CompanyEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="WebDlg.pas">
+				<Form>WebSiteEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="PhoneDlg.pas">
+				<Form>PhoneNumberEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="BankFrm.pas">
+				<Form>BankEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="AccntFrm.pas">
+				<Form>CompAccountEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="BankBr.pas">
+				<Form>BankBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="CorrDlg.pas">
+				<Form>BankCorrEdirDlg</Form>
+			</DCCReference>
+			<DCCReference Include="AccCrFrm.pas">
+				<Form>CompCorrAccntEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="PrsnFrm.pas">
+				<Form>PersonClientEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="TmplFrm.pas">
+				<Form>TouristTemplateForm</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\LIntf\TourConsts.pas"/>
+			<DCCReference Include="..\..\LIntf\Finder.pas"/>
+			<DCCReference Include="..\..\New\VDlgs.pas"/>
+			<DCCReference Include="..\..\LIntf\TourCmnlIf.pas"/>
+			<DCCReference Include="SelDocDlg.pas">
+				<Form>SelectDocmentsDlg</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\OptSet.pas"/>
+			<DCCReference Include="..\..\LIntf\InptHistDlg.pas">
+				<Form>InputHistoryDlg</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\LIntf\TourMbplIf.pas"/>
+			<DCCReference Include="..\..\LIntf\NameLstUn.pas"/>
+			<DCCReference Include="EntPropFrm.pas">
+				<Form>EnterprisePropertyForm</Form>
+			</DCCReference>
+			<DCCReference Include="FeedFrm.pas">
+				<Form>FeedTypeEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="FeedBr.pas">
+				<Form>FeedTypeBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="ReklamFrm.pas">
+				<Form>ReklamaEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="ZTImDlg.pas">
+				<Form>ZTourImageDialog</Form>
+			</DCCReference>
+			<DCCReference Include="ZTPhDlg.pas">
+				<Form>ZTourPhotoDialog</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\ZDlg.pas">
+				<Form>ZDialog</Form>
+			</DCCReference>
+			<DCCReference Include="HtlRoomFrm.pas">
+				<Form>HotelRoomMasterForm</Form>
+			</DCCReference>
+			<DCCReference Include="HtlBldFrm.pas">
+				<Form>HotelBuildMasterForm</Form>
+			</DCCReference>
+			<DCCReference Include="HtlServFrm.pas">
+				<Form>HotelServiceMasterForm</Form>
+			</DCCReference>
+			<DCCReference Include="ZCacheDlg.pas">
+				<Form>ZCacheDialog</Form>
+			</DCCReference>
+			<DCCReference Include="HtlDocFrm.pas">
+				<Form>HotelDocMasterForm</Form>
+			</DCCReference>
+			<DCCReference Include="HtlImgFrm.pas">
+				<Form>HotelImageMasterForm</Form>
+			</DCCReference>
+			<DCCReference Include="WebInptDlg.pas">
+				<Form>WebInputDlg</Form>
+			</DCCReference>
+			<DCCReference Include="RmVwFrm.pas">
+				<Form>RoomViewEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="RmVwBr.pas">
+				<Form>RoomViewBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\StatForm.pas">
+				<Form>StatusBarForm</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\ZFndDlg.pas">
+				<Form>ZFindDialog</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\LIntf\TourStrMag.pas"/>
+			<DCCReference Include="..\..\LIntf\TourDbUn.pas"/>
+			<DCCReference Include="..\..\LIntf\EnvPrnDlg.pas">
+				<Form>EnvelopePrintDlg</Form>
+			</DCCReference>
+			<DCCReference Include="EmailFrm.pas">
+				<Form>EmailAddressEditFrm</Form>
+			</DCCReference>
+			<DCCReference Include="PrvPropFrm.pas">
+				<Form>PrivatePropertyForm</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\PrntUn.pas"/>
+			<DCCReference Include="..\..\LIntf\TourFiles.pas"/>
+			<DCCReference Include="NameChkDlg.pas">
+				<Form>NameCheckDlg</Form>
+			</DCCReference>
+			<DCCReference Include="ProvBr.pas">
+				<Form>ProvinceBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="TxtPrvwDlg.pas">
+				<Form>TextPreviewDlg</Form>
+			</DCCReference>
+			<DCCReference Include="ProvFrm.pas">
+				<Form>ProvinceEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\LIntf\MailSndFrm.pas">
+				<Form>MailSendForm</Form>
+			</DCCReference>
+			<DCCReference Include="CompFndDlg.pas">
+				<Form>CompanyFindDlg</Form>
+			</DCCReference>
+			<DCCReference Include="CityFltrDlg.pas">
+				<Form>CityFilterDlg</Form>
+			</DCCReference>
+			<DCCReference Include="HtlImgDlg.pas">
+				<Form>HotelImageEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="HtlDocDlg.pas">
+				<Form>HotelDocEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="HtlBldDlg.pas">
+				<Form>HotelBuildEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="HtlRoomDlg.pas">
+				<Form>HotelRoomEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="HtlServDlg.pas">
+				<Form>HotelServiceEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="ServUn.pas"/>
+			<DCCReference Include="..\..\Modules\Order\Pay1cUn.pas"/>
+			<DCCReference Include="Comp1cDlg.pas">
+				<Form>CompanyExport1cDlg</Form>
+			</DCCReference>
+			<DCCReference Include="CntrctFrm.pas">
+				<Form>ContractEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\LIntf\MailUn.pas"/>
+			<DCCReference Include="..\..\LIntf\RegExpr.pas"/>
+			<DCCReference Include="..\..\LIntf\About.pas"/>
+			<DCCReference Include="ClntPrpDlg.pas">
+				<Form>ClientPropsDlg</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\LIntf\SyncUn.pas"/>
+			<DCCReference Include="OtherBr.pas">
+				<Form>OtherDictionaryBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="OtherFrm.pas">
+				<Form>OtherDictionaryEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="HolydayDlg.pas">
+				<Form>HolydayEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="DocFileUn.pas"/>
+			<DCCReference Include="TestMain.pas">
+				<Form>FormMenuTop</Form>
+			</DCCReference>
+			<DCCReference Include="WrkTimeDlg.pas">
+				<Form>WorkingTimeDlg</Form>
+			</DCCReference>
+			<DCCReference Include="CompUn.pas"/>
+			<DCCReference Include="..\..\LIntf\IntList.pas"/>
+			<DCCReference Include="..\..\LIntf\HistList.pas"/>
+			<DCCReference Include="IntrstBr.pas">
+				<Form>InterestBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="IntrstFrm.pas">
+				<Form>InterestMasterForm</Form>
+			</DCCReference>
+			<DCCReference Include="CitySqlUn.pas"/>
+			<DCCReference Include="IntrstImgFrm.pas">
+				<Form>InterestImageMasterForm</Form>
+			</DCCReference>
+			<DCCReference Include="ZObjSrvFrm.pas">
+				<Form>ZObjectServiceMasterForm</Form>
+			</DCCReference>
+			<DCCReference Include="IntrstSrvFrm.pas">
+				<Form>InterestServiceMasterForm</Form>
+			</DCCReference>
+			<DCCReference Include="DrvImgFrm.pas">
+				<Form>DriveImageMasterForm</Form>
+			</DCCReference>
+			<DCCReference Include="DriveUn.pas"/>
+			<DCCReference Include="OleCntnr.pas">
+				<Form>OleContainerForm</Form>
+			</DCCReference>
+			<DCCReference Include="DrvSrvFrm.pas">
+				<Form>DriveServiceMasterForm</Form>
+			</DCCReference>
+			<DCCReference Include="DocLstDlg.pas">
+				<Form>VisaDocumentListDlg</Form>
+			</DCCReference>
+			<DCCReference Include="DocEdDlg.pas">
+				<Form>VisaDocumentEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="frm_review.pas">
+				<Form>FormReviewCompany</Form>
+			</DCCReference>
+			<DCCReference Include="DocumVisaFrm.pas">
+				<Form>DocumVisaForm</Form>
+			</DCCReference>
+			<DCCReference Include="DocumVisaBr.pas">
+				<Form>DocumVisaEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="EmbassyDocDlg.pas">
+				<Form>EmbassyDocumDlg</Form>
+			</DCCReference>
+			<DCCReference Include="EmbassyDocEdtDlg.pas">
+				<Form>EmbassyDocEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\LIntf\OrderUn.pas"/>
+			<DCCReference Include="MisForm.pas">
+				<Form>MisFrm</Form>
+			</DCCReference>
+			<DCCReference Include="MIsmatchFrm.pas">
+				<Form>MismatchForm</Form>
+			</DCCReference>
+			<DCCReference Include="FundingFrm.pas">
+				<Form>FundingDlg</Form>
+			</DCCReference>
+			<DCCReference Include="CopyDocToKonsulFrm.pas">
+				<Form>CopyDocToKonsulForm</Form>
+			</DCCReference>
+			<DCCReference Include="EmbassyListfrm.pas">
+				<Form>EmbassyListForm</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\LIntf\TourUnts.pas"/>
+			<DCCReference Include="linkEdFrm.pas">
+				<Form>LinkEdForm</Form>
+			</DCCReference>
+			<DCCReference Include="PartnerForServForm.pas">
+				<Form>PartnerForServDlg</Form>
+			</DCCReference>
+			<DCCReference Include="SetPayServForm.pas">
+				<Form>SetPayServDlg</Form>
+			</DCCReference>
+			<DCCReference Include="SystemTaxBrowseFrm.pas">
+				<Form>SystemTaxBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="SystemTaxDlg.pas">
+				<Form>SystemTaxDialog</Form>
+			</DCCReference>
+			<DCCReference Include="TradeNameFrm.pas">
+				<Form>TradeNameForm</Form>
+			</DCCReference>
+			<DCCReference Include="CompNoteFrm.pas">
+				<Form>CompNoteFotm</Form>
+			</DCCReference>
+			<DCCReference Include="AttachFileForm.pas">
+				<Form>AttachFileFrm</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\LIntf\OrderHtmlConst.pas"/>
+			<DCCReference Include="ContractTemplatesFrm.pas">
+				<Form>ContractTemplatesForm</Form>
+			</DCCReference>
+			<DCCReference Include="BookmarkFrm.pas">
+				<Form>BookmarkForm</Form>
+			</DCCReference>
+			<DCCReference Include="ReestrDataFrm.pas">
+				<Form>ReestrDataForm</Form>
+			</DCCReference>
+			<DCCReference Include="ContractDataFrm.pas">
+				<Form>ContractDataForm</Form>
+			</DCCReference>
+			<DCCReference Include="NoteEdDlg.pas">
+				<Form>NoteEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="TrdNameEditDlg.pas">
+				<Form>TradeNameEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="ExtraAgentDlg.pas">
+				<Form>ExtraAgentEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="ObdzvinFrm.pas">
+				<Form>ObdzvinForm</Form>
+			</DCCReference>
+			<DCCReference Include="PromiseDlg.pas">
+				<Form>PromiseEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\LIntf\MngrIbDlg.pas">
+				<Form>ManagerDlg</Form>
+			</DCCReference>
+			<DCCReference Include="FindHeadOffDlg.pas">
+				<Form>FindHeadOfficeDlg</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\Modules\TourVisa\RcvOrigContractDlg.pas">
+				<Form>RcvOrigCntrctDlg</Form>
+			</DCCReference>
+			<DCCReference Include="ForeignLangDlg.pas">
+				<Form>ForeignLanguageDlg</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\ExcelUn.pas"/>
+			<DCCReference Include="TReMoveRoomForm.pas">
+				<Form>ReMoveRoomDlg</Form>
+			</DCCReference>
+			<DCCReference Include="RichEditForm.pas">
+				<Form>RichEditDlg</Form>
+			</DCCReference>
+			<DCCReference Include="DictHtlBldBr.pas">
+				<Form>HotelBuildBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="DictHtlBldFrm.pas">
+				<Form>HotelBuildEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="ActualLangBr.pas">
+				<Form>ActualLanguageBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="ActiveLangEditFrm.pas">
+				<Form>ActiveLangEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="HtlTypeFrm.pas">
+				<Form>HtlTypeEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="HtlDataTransFrm.pas">
+				<Form>HtlDataTransForm</Form>
+			</DCCReference>
+			<DCCReference Include="ExpandRoomNameEditFrm.pas">
+				<Form>ExpandRoomNameEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="RoomExpandNameBr.pas">
+				<Form>RoomExpandNameBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="LogMoveRoomFrm.pas">
+				<Form>LogMoveRoomBr</Form>
+			</DCCReference>
+			<DCCReference Include="ImgSqlUn.pas"/>
+			<DCCReference Include="ResortBr.pas">
+				<Form>ResortBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="DictResortTypeFrm.pas">
+				<Form>ResortTypeEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="DictResortTypeBr.pas">
+				<Form>ResortTypesBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="NaturObjectsBr.pas">
+				<Form>NaturObjectsBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="NaturObjectTypeEditFrm.pas">
+				<Form>NaturObjectTypeEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="NaturObjectTypeBr.pas">
+				<Form>NaturObjectTypeBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="FreeTimeObjForm.pas">
+				<Form>FreeTimeObjFrm</Form>
+			</DCCReference>
+			<DCCReference Include="ZTLangDlg.pas">
+				<Form>ZTourLangDialog</Form>
+			</DCCReference>
+			<DCCReference Include="AdminUnitFrm.pas">
+				<Form>AdminUnitTypeEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="AdminUnitBr.pas">
+				<Form>AdminUnitTypeBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="ProvNewFrm.pas">
+				<Form>ProvinceEditNewForm</Form>
+			</DCCReference>
+			<DCCReference Include="RegionFrm.pas">
+				<Form>TownShipEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="NaturObjectImgFrm.pas">
+				<Form>NaturObjectImageMasterForm</Form>
+			</DCCReference>
+			<DCCReference Include="NaturObjEditNewForm.pas">
+				<Form>NaturObjEditNewFrm</Form>
+			</DCCReference>
+			<DCCReference Include="ResortNewFrm.pas">
+				<Form>ResortEditNewForm</Form>
+			</DCCReference>
+			<DCCReference Include="ResortImgFrm.pas">
+				<Form>ResortImageMasterForm</Form>
+			</DCCReference>
+			<DCCReference Include="BedTypeEditFrm.pas">
+				<Form>BedTypeEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="BedTypeBr.pas">
+				<Form>BedTypeBrowseForm</Form>
+			</DCCReference>
+			<DCCReference Include="HtlBedFrm.pas">
+				<Form>HotelBedMasterForm</Form>
+			</DCCReference>
+			<DCCReference Include="HotelBedEditrFrm.pas">
+				<Form>HotelBedEditrForm</Form>
+			</DCCReference>
+			<DCCReference Include="AreaEditDlg.pas">
+				<Form>AreaDlg</Form>
+			</DCCReference>
+			<DCCReference Include="CityNewForm.pas">
+				<Form>CityEditNewForm</Form>
+			</DCCReference>
+			<DCCReference Include="InfraTypeGrpFrm.pas">
+				<Form>InfraTypeGrpEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="InfraTypeEditFrm.pas">
+				<Form>InfraTypeEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="InfraTypeBr.pas">
+				<Form>InfrastruktureTypeBrForm</Form>
+			</DCCReference>
+			<DCCReference Include="InfraEditFrm.pas">
+				<Form>InfrastructureEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="InfraBr.pas">
+				<Form>InfrastruktureBrForm</Form>
+			</DCCReference>
+			<DCCReference Include="ParentObjEditFrm.pas">
+				<Form>ParentObjEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="InfraImgFrm.pas">
+				<Form>InfraImageMasterForm</Form>
+			</DCCReference>
+			<DCCReference Include="ProgramSqlUn.pas"/>
+			<DCCReference Include="..\..\LIntf\LIfConsts.pas"/>
+			<DCCReference Include="..\..\LIntf\DicProglIf.pas"/>
+			<DCCReference Include="SystemTaxEditFrm.pas">
+				<Form>SystemTaxEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="CompTaxLogFrm.pas">
+				<Form>CompTaxLogForm</Form>
+			</DCCReference>
+			<DCCReference Include="CompTaxEditFrm.pas">
+				<Form>CompTaxEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="MoveSystemTaxFrm.pas">
+				<Form>MoveSystemTaxForm</Form>
+			</DCCReference>
+			<DCCReference Include="VendorHotelNameFrm.pas">
+				<Form>VendorHotelNameForm</Form>
+			</DCCReference>
+			<DCCReference Include="TmplFrmNew.pas">
+				<Form>TouristTemplateNewForm</Form>
+			</DCCReference>
+			<DCCReference Include="AnketDataFrm.pas">
+				<Form>AnketDataForm</Form>
+			</DCCReference>
+			<DCCReference Include="ServModIB.pas">
+				<Form>DMServIB</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="VisaCenterSelFrm.pas">
+				<Form>VisaCenterSelForm</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\ExtStream.pas"/>
+			<DCCReference Include="ParentDocBrFrm.pas">
+				<Form>ParentDocBrForm</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\UnitProc.pas"/>
+			<DCCReference Include="DriveNoteFrm.pas">
+				<Form>DriveNoteFotm</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\UnitPreviewFiles.pas"/>
+			<DCCReference Include="..\..\New\core\SnifferViewStyle.pas"/>
+			<DCCReference Include="..\..\New\core\1CSoap\UnitFunctSoapDll.pas"/>
+			<DCCReference Include="..\..\New\core\1CSoap\UnitSoap1C.pas"/>
+			<DCCReference Include="..\..\New\core\UnitProgresStop.pas">
+				<Form>FrmProgresBarStop</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\1CSoap\frmMergeResults.pas">
+				<Form>FrmMergeResultList</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\UnitGenerateElementsCore.pas">
+				<Form>FrmFindAllElements</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\core.pas"/>
+			<DCCReference Include="..\..\New\core\UnitIBQuery.pas"/>
+			<DCCReference Include="DesctiptEditFrm.pas">
+				<Form>DesctiptEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="SectionEditFrm.pas">
+				<Form>SectionEditForm</Form>
+			</DCCReference>
+			<DCCReference Include="UnitBrwsDic.pas">
+				<Form>FrmBrwsDic</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\UnitExportExcel.pas"/>
+			<DCCReference Include="UnitWinsDic.pas">
+				<Form>FrmWinsDic</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\FrmProgress.pas">
+				<Form>FormProgres</Form>
+			</DCCReference>
+			<DCCReference Include="SelCountryDescriptFrm.pas">
+				<Form>SelCountryDescriptForm</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\WEBSoap\UnitFunctWebSoap.pas"/>
+			<DCCReference Include="..\..\New\core\frmMergeLogSoap.pas">
+				<Form>frmMergeSoap</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\ImageMD.pas"/>
+			<DCCReference Include="..\..\New\core\UnitEditText.pas">
+				<Form>FrmEditText</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\WEBSoap\UnitWebSoap.pas"/>
+			<DCCReference Include="..\..\New\core\UnitInputData.pas">
+				<Form>FrmInputData</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\WEBSoap\UnitStructrureWebSoap.pas"/>
+			<DCCReference Include="..\..\New\core\UnitCompareDataGrid.pas"/>
+			<DCCReference Include="..\..\New\core\frmCompareDataGrid.pas"/>
+			<DCCReference Include="UnitCompBr.pas">
+				<Form>FrmCompanyBrowse</Form>
+			</DCCReference>
+			<DCCReference Include="UnitEditInfoCountry.pas">
+				<Form>FrmEditInfoCountry</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\UnitFrameMoveToTimeZone.pas">
+				<Form>FrameMoveToTimeZone</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\UnitTimeLiner.pas"/>
+			<DCCReference Include="..\..\New\core\MyHint.pas"/>
+			<DCCReference Include="..\..\New\core\ListSelectForm.pas">
+				<Form>FrListSelect</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\UnitSelectHoliday.pas">
+				<Form>FrmSelectHoliday</Form>
+			</DCCReference>
+			<DCCReference Include="UnitCountryCityEdit.pas">
+				<Form>FrmCountryCityEdit</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\UnitLngTranslate.pas">
+				<Form>FrmLngTranslate</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\UnitLngTranslateEdit.pas">
+				<Form>FrmLngTranslateEdit</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\Google\UnitTranslate.pas">
+				<Form>FormGtranslater</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\Google\UnitGoogleMaps.pas"/>
+			<DCCReference Include="..\..\New\JSON\uLkJSON.pas"/>
+			<DCCReference Include="UnitDictionGrid.pas">
+				<Form>FrmEditDict</Form>
+			</DCCReference>
+			<DCCReference Include="UnitDictionGridDetail.pas">
+				<Form>FrmEditDictDetail</Form>
+			</DCCReference>
+			<DCCReference Include="UnitExcursionEdit.pas">
+				<Form>FormExcursionEdit</Form>
+			</DCCReference>
+			<DCCReference Include="UnitFrameDicCity.pas">
+				<Form>FrameDicCity</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="UnitEditInfoExcursion.pas">
+				<Form>Frm_UnitEditInfoExcursion</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\UnitFrameDescriptionWebHTML.pas">
+				<Form>FrameDescriptionWebHTML</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="UnitHotelEdit.pas">
+				<Form>FrmHotelEdit</Form>
+			</DCCReference>
+			<DCCReference Include="UnitHotelInfoEdit.pas">
+				<Form>FrmHotelInfoEdit</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\UnitFrameSearchCity.pas">
+				<Form>FrameSearchCity</Form>
+				<DesignClass>TFrame</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\..\New\ClientDlg.pas">
+				<Form>ClientChooseDlg</Form>
+			</DCCReference>
+			<DCCReference Include="..\..\New\core\1CSoap\UnitTourSoup.pas"/>
+			<DCCReference Include="..\..\New\core\LOG\UnitFunctLog.pas"/>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">TestDict.dpr</Source>
+					</Source>
+					<Parameters>
+						<Parameters Name="RunParams">-Man 17 -companies-</Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<Language>
+						<Language Name="ProjectLang">$00000422</Language>
+					</Language>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1058</VersionInfo>
+						<VersionInfo Name="CodePage">1251</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+					</VersionInfoKeys>
+				</Delphi.Personality>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>

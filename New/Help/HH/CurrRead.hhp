@@ -1,0 +1,39 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=CurrRead.chm
+Contents file=currread.hhc
+Default Font=Arial Cyr,6,0
+Default topic=html\curr9xgl.htm
+Display compile progress=No
+Index file=CurrRead.hhk
+Language=0x422 ”краинский
+Title= урси валют
+
+
+[FILES]
+html\curr9xgl.htm
+html\curr2sms.htm
+html\curr9dt8.htm
+html\curr1d9h.htm
+html\curr4yyc.htm
+html\curr6o9w.htm
+html\curr4l4i.htm
+html\curr4uqt.htm
+html\curr8odh.htm
+html\curr09f6.htm
+html\curr07n7.htm
+html\curr3l9t.htm
+html\curr3l9u.htm
+html\curr3l9v.htm
+html\curr43w7.htm
+html\curr1d0l.htm
+html\curr2bsi.htm
+html\curr2qeq.htm
+html\curr99dl.htm
+html\curr8bsd.htm
+html\curr252k.htm
+html\curr0azp.htm
+html\curr9jht.htm
+
+[INFOTYPES]
+

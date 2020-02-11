@@ -1,0 +1,17 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=TourInsr.chm
+Contents file=TourInsr.hhc
+Default Font=Arial Cyr,8,0
+Display compile progress=No
+Index file=TourInsr.hhk
+Language=0x422 Украинский
+Title=Страхування
+
+
+[FILES]
+InsrMain.htm
+Browser.htm
+
+[INFOTYPES]
+

@@ -1,0 +1,425 @@
+object FrmBrwsDic: TFrmBrwsDic
+  Left = 636
+  Top = 230
+  Width = 894
+  Height = 675
+  Caption = 'FrmBrwsDic'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object CoolBar: TCoolBar
+    Left = 0
+    Top = 0
+    Width = 878
+    Height = 31
+    Anchors = []
+    AutoSize = True
+    Bands = <
+      item
+        Break = False
+        Control = ToolBar
+        ImageIndex = -1
+        MinHeight = 27
+        Width = 874
+      end>
+    FixedSize = True
+    object ToolBar: TToolBar
+      Left = 9
+      Top = 0
+      Width = 861
+      Height = 27
+      Align = alClient
+      Anchors = [akLeft, akTop, akBottom]
+      AutoSize = True
+      ButtonHeight = 25
+      ButtonWidth = 25
+      EdgeBorders = []
+      EdgeInner = esNone
+      EdgeOuter = esNone
+      Flat = True
+      Images = DMServ.BrowseImgList
+      TabOrder = 0
+      Transparent = True
+      object DataSetRefreshBtn: TToolButton
+        Left = 0
+        Top = 0
+        Action = ActDBRefresh
+      end
+      object DataSetFirstBtn: TToolButton
+        Left = 25
+        Top = 0
+        Action = ActViewFirst
+      end
+      object DataSetPriorBtn: TToolButton
+        Left = 50
+        Top = 0
+        Action = ActViewPrev
+      end
+      object DataSetNextBtn: TToolButton
+        Left = 75
+        Top = 0
+        Action = ActViewNext
+      end
+      object DataSetLastBtn: TToolButton
+        Left = 100
+        Top = 0
+        Action = ActViewLast
+      end
+      object SeparatorTBtn0: TToolButton
+        Left = 125
+        Top = 0
+        Width = 8
+        Caption = 'SeparatorTBtn0'
+        ImageIndex = 76
+        Style = tbsSeparator
+      end
+      object AppendTbtn: TToolButton
+        Tag = 1
+        Left = 133
+        Top = 0
+        Action = ActInsertDB
+      end
+      object EditTbtn: TToolButton
+        Tag = 2
+        Left = 158
+        Top = 0
+        Action = ActDBEdit
+      end
+      object CopyTBtn: TToolButton
+        Left = 183
+        Top = 0
+        Action = ActCopyRow
+      end
+      object SeparatorTBtn2: TToolButton
+        Left = 208
+        Top = 0
+        Width = 8
+        Caption = 'SeparatorTBtn2'
+        ImageIndex = 2
+        Style = tbsSeparator
+      end
+      object DeleteTbtn: TToolButton
+        Left = 216
+        Top = 0
+        Action = ActViewDelete
+      end
+      object SeparatorTBtn4: TToolButton
+        Left = 241
+        Top = 0
+        Width = 8
+        Caption = 'SeparatorTBtn4'
+        ImageIndex = 4
+        Style = tbsSeparator
+      end
+      object ViewMemosTBtn: TToolButton
+        Left = 249
+        Top = 0
+        Action = ViewMemo
+        AllowAllUp = True
+      end
+      object SeparatorTBtn3: TToolButton
+        Left = 274
+        Top = 0
+        Width = 8
+        Caption = 'SeparatorTBtn3'
+        ImageIndex = 10
+        Style = tbsSeparator
+      end
+      object ListingExport2ExcelBtn: TToolButton
+        Left = 282
+        Top = 0
+        Action = ViewExportExcel
+      end
+      object LangPanel: TPanel
+        Left = 307
+        Top = 0
+        Width = 250
+        Height = 25
+        Align = alCustom
+        BevelOuter = bvNone
+        TabOrder = 0
+        Visible = False
+        object LangComboBox: TcxLookupComboBox
+          Left = 81
+          Top = 2
+          Properties.ListColumns = <>
+          Properties.OnChange = LangComboBoxPropertiesChange
+          TabOrder = 0
+          Width = 167
+        end
+        object LangCheckBox: TcxCheckBox
+          Left = 6
+          Top = 2
+          Caption = #1055#1077#1088#1077#1082#1083#1072#1076
+          Properties.OnEditValueChanged = LangCheckBoxPropertiesEditValueChanged
+          Style.BorderStyle = ebs3D
+          Style.LookAndFeel.NativeStyle = False
+          StyleDisabled.LookAndFeel.NativeStyle = False
+          StyleFocused.LookAndFeel.NativeStyle = False
+          StyleHot.LookAndFeel.NativeStyle = False
+          TabOrder = 1
+          Transparent = True
+          Width = 74
+        end
+      end
+    end
+  end
+  object DetailPanel: TPanel
+    Left = 695
+    Top = 31
+    Width = 183
+    Height = 572
+    Align = alRight
+    BevelInner = bvLowered
+    BevelOuter = bvNone
+    TabOrder = 1
+  end
+  object ModalPanel: TPanel
+    Left = 0
+    Top = 603
+    Width = 878
+    Height = 34
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 2
+    Visible = False
+    DesignSize = (
+      878
+      34)
+    object OkBtn: TBitBtn
+      Left = 706
+      Top = 5
+      Width = 80
+      Height = 25
+      Anchors = [akTop, akRight]
+      Caption = 'O'#1050
+      TabOrder = 0
+      OnClick = OkBtnClick
+      Kind = bkOK
+    end
+    object CancelBtn: TBitBtn
+      Left = 796
+      Top = 5
+      Width = 81
+      Height = 25
+      Anchors = [akTop, akRight]
+      Caption = #1042#1110#1076#1084#1110#1085#1072
+      TabOrder = 1
+      OnClick = CancelBtnClick
+      Kind = bkCancel
+    end
+  end
+  object MasterPanel: TPanel
+    Left = 0
+    Top = 31
+    Width = 695
+    Height = 572
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 3
+    object MasterSplitter: TSplitter
+      Left = 0
+      Top = 569
+      Width = 695
+      Height = 3
+      Cursor = crVSplit
+      Align = alBottom
+      Beveled = True
+    end
+    object PanelViewMemText: TPanel
+      Left = 0
+      Top = 448
+      Width = 695
+      Height = 121
+      Align = alBottom
+      BevelOuter = bvNone
+      TabOrder = 0
+      object MasterDBRichEdit: TcxDBRichEdit
+        Left = 0
+        Top = 0
+        Align = alClient
+        TabOrder = 0
+        Height = 121
+        Width = 695
+      end
+    end
+    object Panel2: TPanel
+      Left = 0
+      Top = 0
+      Width = 695
+      Height = 448
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 1
+      object GridElem: TcxGrid
+        Left = 0
+        Top = 0
+        Width = 695
+        Height = 448
+        Align = alClient
+        TabOrder = 0
+        LookAndFeel.NativeStyle = False
+        object GridElemDBTableView1: TcxGridDBTableView
+          DataController.Summary.DefaultGroupSummaryItems = <>
+          DataController.Summary.FooterSummaryItems = <>
+          DataController.Summary.SummaryGroups = <>
+        end
+        object GridElemLevel1: TcxGridLevel
+        end
+      end
+    end
+  end
+  object PopupMenu: TPopupMenu
+    Images = DMServ.BrowseImgList
+    Left = 302
+    Top = 74
+    object N1: TMenuItem
+      Caption = '&'#1055#1077#1088#1096#1080#1081
+      Hint = #1055#1077#1088#1096#1080#1081' '#1079#1072#1087#1080#1089'|'#1055#1077#1088#1077#1081#1090#1080' '#1085#1072' '#1087#1077#1088#1096#1080#1081' '#1079#1072#1087#1080#1089' '#1074' '#1090#1072#1073#1083#1080#1094#1110' '#1041#1044
+      ImageIndex = 10
+    end
+    object N2: TMenuItem
+      Caption = '&'#1054#1089#1090#1072#1085#1085#1110#1081
+      Hint = #1054#1089#1090#1072#1085#1085#1110#1081' '#1079#1072#1087#1080#1089'|'#1055#1077#1088#1077#1081#1090#1080' '#1085#1072' '#1086#1089#1090#1072#1085#1085#1110#1081' '#1079#1072#1087#1080#1089' '#1074' '#1090#1072#1073#1083#1080#1094#1110' '#1041#1044
+      ImageIndex = 13
+    end
+    object N3: TMenuItem
+      Caption = '-'
+    end
+    object N4: TMenuItem
+      Caption = #1053#1086#1074#1080#1081
+      Hint = #1053#1086#1074#1080#1081' '#1088#1103#1076#1086#1082'|'#1044#1086#1076#1072#1090#1080' '#1085#1086#1074#1080#1081' '#1088#1103#1076#1086#1082' '#1074' '#1090#1072#1073#1083#1080#1094#1102
+      ImageIndex = 0
+      ShortCut = 16462
+    end
+    object N5: TMenuItem
+      Caption = #1047#1084#1110#1085#1080#1090#1080
+      Hint = #1047#1084#1110#1085#1080#1090#1080'|'#1042#1085#1077#1089#1090#1080' '#1074#1080#1087#1088#1072#1074#1083#1077#1085#1085#1103' '#1074' '#1088#1103#1076#1086#1082' '#1090#1072#1073#1083#1080#1094#1110
+      ImageIndex = 1
+      ShortCut = 16453
+    end
+    object N6: TMenuItem
+      Caption = '-'
+    end
+    object N7: TMenuItem
+      Caption = #1055#1086#1096#1091#1082
+      Hint = #1055#1086#1096#1091#1082' '#1087#1086' '#1090#1077#1082#1089#1090#1091'|'#1055#1086#1096#1091#1082' '#1088#1103#1076#1082#1072' '#1074' '#1090#1072#1073#1083#1080#1094#1110' '#1087#1086' '#1090#1077#1082#1089#1090#1091
+      ImageIndex = 2
+      ShortCut = 114
+    end
+    object N8: TMenuItem
+      Caption = '-'
+    end
+    object N9: TMenuItem
+      Caption = '&'#1050#1086#1087#1110#1102#1074#1072#1090#1080
+      Hint = #1050#1086#1087#1110#1102#1074#1072#1090#1080' '#1074' '#1073#1091#1092#1077#1088
+      ImageIndex = 16
+      ShortCut = 16451
+    end
+    object N10: TMenuItem
+      Caption = #1042#1080'&'#1088#1110#1079#1072#1090#1080
+      Hint = #1042#1080#1088#1110#1079#1072#1090#1080' '#1074' '#1073#1091#1092#1077#1088
+      ImageIndex = 17
+      ShortCut = 16472
+    end
+    object N11: TMenuItem
+      Caption = #1042#1089#1090'&'#1072#1074#1080#1090#1080
+      Hint = #1042#1089#1090#1072#1074#1080#1090#1080' '#1079' '#1073#1091#1092#1077#1088#1072
+      ImageIndex = 19
+      ShortCut = 16470
+    end
+    object N12: TMenuItem
+      Caption = #1042#1080#1076#1110#1083#1080#1090#1080' '#1074#1089'&'#1077
+      Hint = #1042#1080#1076#1110#1083#1080#1090#1080' '#1074#1089#1077
+    end
+    object N13: TMenuItem
+      Caption = #1053#1072#1079#1072#1076
+      Hint = #1042#1110#1076#1084#1110#1085#1080#1090#1080' '#1086#1089#1090#1072#1085#1085#1102' '#1086#1087#1077#1088#1072#1094#1110#1102' '#1079' '#1090#1077#1082#1089#1090#1086#1084
+      ImageIndex = 20
+      ShortCut = 16474
+    end
+  end
+  object SaveDialog: TSaveDialog
+    DefaultExt = '*.txt'
+    Filter = #1058#1077#1082#1089#1090#1086#1074#1080#1081' '#1092#1072#1081#1083' (*.txt)|*.txt'
+    Options = [ofHideReadOnly, ofFileMustExist, ofEnableSizing]
+    Title = #1047#1073#1077#1088#1077#1075#1090#1080' '#1103#1082
+    Left = 413
+    Top = 55
+  end
+  object RecordBrowseBackPopupMenu: TPopupMenu
+    Left = 298
+    Top = 144
+  end
+  object RecordBrowseForwardPopupMenu: TPopupMenu
+    Left = 493
+    Top = 96
+  end
+  object ActionListTopBut: TActionList
+    Images = DMServ.BrowseImgList
+    Left = 424
+    Top = 167
+    object ActDBRefresh: TAction
+      ImageIndex = 124
+      OnExecute = ActDBRefreshExecute
+    end
+    object ActViewFirst: TAction
+      Caption = 'ActViewFirst'
+      ImageIndex = 10
+      OnExecute = ActViewFirstExecute
+    end
+    object ActViewPrev: TAction
+      Caption = 'ActViewPrev'
+      ImageIndex = 11
+      OnExecute = ActViewPrevExecute
+    end
+    object ActViewNext: TAction
+      Caption = 'ActViewNext'
+      ImageIndex = 12
+      OnExecute = ActViewNextExecute
+    end
+    object ActViewLast: TAction
+      Caption = 'ActViewLast'
+      ImageIndex = 13
+      OnExecute = ActViewLastExecute
+    end
+    object ActInsertDB: TAction
+      Caption = 'ActInsertDB'
+      ImageIndex = 0
+      OnExecute = ActInsertDBExecute
+    end
+    object ActDBEdit: TAction
+      Caption = 'ActDBEdit'
+      ImageIndex = 1
+      OnExecute = ActDBEditExecute
+    end
+    object ActCopyRow: TAction
+      Caption = 'ActCopyRow'
+      ImageIndex = 21
+      OnExecute = ActCopyRowExecute
+    end
+    object ActViewDelete: TAction
+      Caption = 'ActViewDelete'
+      ImageIndex = 3
+      OnExecute = ActViewDeleteExecute
+    end
+    object ViewMemo: TAction
+      Caption = 'ViewMemo'
+      ImageIndex = 8
+      OnExecute = ViewMemoExecute
+    end
+    object ViewExportExcel: TAction
+      Caption = 'ViewExportExcel'
+      ImageIndex = 73
+      OnExecute = ViewExportExcelExecute
+    end
+  end
+end

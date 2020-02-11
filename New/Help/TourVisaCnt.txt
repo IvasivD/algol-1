@@ -1,0 +1,10 @@
+TourVisaMainForm=70000
+TourVisaLogin=70001
+TourVisaLaunchOrder=70002
+TourVisaGroupProperty=70003
+TourVisaAnket=70004
+TourVisaToggleMode=70005
+TourVisaDateFilter=70006
+TourVisaReports=70007
+TourVisaDatasetRefresh=70008
+TourVisaVisaPropertyDlg=70030

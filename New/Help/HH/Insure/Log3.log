@@ -1,0 +1,23 @@
+Microsoft HTML Help Compiler 4.73.8198
+
+Compiling d:\Tomoye\New\Help\HH\CurrRead.chm
+
+
+Compile time: 0 minutes, 2 seconds
+23	Topics
+49	Local links
+0	Internet links
+0	Graphics
+
+
+Created d:\Tomoye\New\Help\HH\CurrRead.chm, 17,049 bytes
+Compression decreased file by 14,813 bytes.
+Microsoft HTML Help Compiler 4.73.8198
+
+Compiling d:\Tomoye\New\Help\HH\Insure\TourInsr.chm
+
+HHC6000: Error: An error occurred attempting to create an internal file. Make certain there is enough disk space on the drive where you are compiling your file.
+HHC5007: Error: Fatal Navigational Compilation Error. This is likely the result of an invalid .HHC file.
+
+
+The following files were not compiled:

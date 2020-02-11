@@ -1,0 +1,12 @@
+:Base TourVisa
+:Title Візи
+1 Візи
+2 Про "Візи"=TourVisaMainForm
+2 Реєстрація=TourVisaLogin
+2 Режими представлення списків=TourVisaToggleMode
+2 Анкети=TourVisaAnket
+2 Робота з замовленнями=TourVisaLaunchOrder
+2 Дані для групи=TourVisaGroupProperty
+2 Фільтр по даті=TourVisaDateFilter
+2 Звіти, експорт інформації=TourVisaReports
+2 Поновлення інформації=TourVisaDatasetRefresh

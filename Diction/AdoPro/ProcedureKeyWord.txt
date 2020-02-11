@@ -1,0 +1,132 @@
+AREA_CREATE_PROC ( CITIES, RESORTLINKS )   не використов в новій версії (старі довідники)
+AREA_SEL_PROC ( CITIES, RESORTLINKS ) не використов в новій версії (старі довідники)
+AUDITITEMS_SEL_PROC ( ADDRESS, COMPEMAILS, COMPPHONES ) не використовується нігде не знайдено
+BILLING_SEL_PROC ( TMUSERS ) 
+BRCITIES_SEL_PROC ( CITIES, PROVINCES ) не використов в новій версії (старі довідники)
+BRCOUNTRIES_SEL_PROC ( CITIES ) не використов в новій версії (старі довідники)
+CHMONEYS_SELOLD_PROC ( TMUSERS ) не використовується нігде не знайдено
+CHMONEYS_SEL_PROC ( TMUSERS ) не використовується нігде не знайдено
+CITY_SEL_PROC ( CITIES, PROVINCES, TOWNSHIPS ) не використов в новій версії (старі довідники) + \Masters\Pars\City2RepFrm.dfm;\Web\WebApp0\WebMod.dfm;
+CLIENT_LIST_ADDRESS_PROC ( ADDRESS, COMPEMAILS ) не використовується нігде не знайдено ( \Masters\Market\DataMod.dfm )
+CLIENT_SELONE_PROC ( CITIES, ADDRESS, COMPEMAILS, COMPPHONES ) 
+CLIENT_SELPREFER_PROC ( COMPEMAILS, COMPPHONES ) 
+CLIENT_SELPROPERTY_PROC ( CITIES, COMPEMAILS, COMPPHONES ) 
+CLIENT_SELTEST_PROC ( ADDRESS, COMPEMAILS, COMPPHONES ) не використовується нігде не знайдено  
+CLIENT_SEL_PROC ( ADDRESS, COMPEMAILS, COMPPHONES ) 
+COMPANY_HEADPROPERTIES_SEL_PROC ( CITIES, PROVINCES, TOWNSHIPS, TMUSERS, COMPEMAILS, COMPPHONES, COMPWEBSITES ) не використовується нігде не знайдено  так як є нова процедура COMPANY_HEADPROPERTIES_SEL_PROC_NEW
+COMPANY_HEADPROP_SEL_PROC_NEW ( TMUSERS, ADDRESS ) не використовується нігде не знайдено  
+COMPANY_PROPERTIES_SEL_PROC ( COMPEMAILS, COMPPHONES ) 
+COMPANY_SELADDRESS_PROC ( ADDRESS, COMPEMAILS ) не використовується нігде не знайдено ( \Masters\Market\DataMod.dfm )
+COMPEMAILFAX_SP ( COMPEMAILS, COMPPHONES ) не використовується нігде не знайдено
+CONTROL_OTHERSERV_BY_SEL_PROC ( CITIES ) 
+CONTROL_TOURIST_SEL_PROC ( CITIES ) 
+CONTROL_TRIP_SEL_PROC ( CITIES ) 
+EXCURSSHABLONDETAILS_SEL_PROC ( CITIES, PROVINCES, TOWNSHIPS, INFRASTRUCTURES, INFRATYPELINKS, INFRATYPES, NATUROBJECTS, OBJECTLINKS ) не використов в новій версії (старі довідники) 
+GET_ALL_SERVICE_RATE_FORTG_PROC ( CITIES ) 
+HOTEL_BROWSE_PROC ( CITIES, RESORTLINKS, COMPPHONES )  не використов в новій версії (старі довідники)
+HOTEL_FIND_SEL_PROC ( TMUSERS ) 
+INFRASTRUCTURES_SEL_PROC ( INFRASTRUCTURES, INFRATYPEGROUPS, INFRATYPELINKS, INFRATYPES, OBJECTLINKS ) не використов в новій версії (старі довідники)
+INFRA_TYPEGROUP_SEL_PROC ( INFRATYPEGROUPS ) не використов в новій версії (старі довідники)
+INFRA_TYPE_SEL_PROC ( INFRATYPEGROUPS, INFRATYPELINKS, INFRATYPES ) не використов в новій версії (старі довідники)
+INSUREPOLICE_DETAIL_PROC ( TMUSERS ) 
+INSUREPOLICE_LIST_PROC ( TMUSERS ) 
+INSUREPOLICE_SUM_PROC ( TMUSERS ) 
+INSURE_FIND_SEL_PROC ( TMUSERS ) 
+INSURTOURGROUPS_SEL_PROC ( TOURVARIANTS ) 
+LIST_GUIDE_PROC_ ( CITIES ) не використовується нігде не знайдено
+LIST_ORDER_PROC ( CITIES ) 
+MANAGER_PERSONCOUNT1_PROC ( TMUSERS ) !!   \Modules\OrderBr_AND\MngRepFrm.dfm;
+MANAGER_PERSONCOUNT_PROC ( TMUSERS ) !!     \Modules\OrderBr_AND\MngRepFrm.dfm;
+MEETING_BYTOURDATE_SEL_PROC ( CITIES ) Не використовується знадено нову функцію _NEW
+MEETING_BYTOURDATE_SEL_PROC_NEW ( CITIES ) 
+MEETING_BYTOURGROUP_SEL_PROC ( CITIES )  !!! перевірити бо є нова функція NEW
+MEETING_BYTOURGROUP_SEL_PROCNEW ( CITIES ) 
+MEETING_BYTOUR_SEL_PROC ( CITIES ) !!! перевірити бо є нова функція _NEW
+MEETING_BYTOUR_SEL_PROC_NEW ( CITIES ) 
+MEETING_BYTRIP_SEL_PROC ( CITIES )               !!! Використ в \Modules\TripNew\InsrVwFrm.pas;
+NATUROBJECTS_SEL_PROC ( NATUROBJECTS, OBJECTLINKS )  не використов в новій версії (старі довідники)
+OBJECT_CHILD_SEL_PROC ( CITIES, PROVINCES, TOWNSHIPS, INFRASTRUCTURES, INFRATYPELINKS, INFRATYPES, NATUROBJECTS, OBJECTLINKS )   не використов в новій версії (старі довідники)
+OBJECT_PARENT_SEL_PROC ( CITIES, PROVINCES, TOWNSHIPS, INFRASTRUCTURES, INFRATYPELINKS, INFRATYPES, NATUROBJECTS, OBJECTLINKS )  не використов в новій версії (старі довідники)
+ORDER_BILL_SEL_PROC ( TMUSERS )   використовується в \Algol_Source (Dima)\New\BillRepFrm.dfm
+ORDER_CLIENT_SEL_PROC ( TOURVARIANTS ) використовується \Modules\OrderPay Святослав 2008\DataMod.dfm;\_OldVersion\OrdConf_20181019\CnfSMod.dfm;\_OldVersion\OrdConf_20181019\ConfMod.dfm;\_OldVersion\OrderPay Святослав 2008_171121_BEFORE_ib\DataMod.dfm;\Web\OrdConf\CnfSMod.dfm;\Web\OrdConf\ConfMod.dfm;\Modules\OrderPay Святослав 2008\OrdPaySQLUn.pas;
+ORDER_FINDTOURIST_PROC ( TMUSERS ) використовується \Modules\OrderBr_AND\OrdFindDlg.dfm;
+ORDER_LIST1_PROC ( TMUSERS, COMPEMAILS, COMPPHONES )   не використовується нігде не знайдено
+ORDER_LIST_PROC ( TMUSERS, COMPEMAILS, COMPPHONES ) використовується \_OldVersion\New\DataMod.dfm;\Algol_Source (Dima)\New\DataMod.dfm;
+ORDER_SEL1_PROC ( TMUSERS )     не використовується нігде не знайдено
+ORDER_TRIP_SEL_PROC ( CITIES ) 
+ORDER_VISAPERS_BY_SEL_PROC ( CITIES ) 
+PALCEBYTRIP_ORDCNF_PROC ( CITIES ) використовуєтсься  \_OldVersion\OrdConf_20181019\CnfSMod.dfm;\_OldVersion\OrdConf_20181019\ConfMod.dfm;\Web\OrdConf\CnfSMod.dfm;\Web\OrdConf\ConfMod.dfm;
+PERSON_HOTELS_SEL_PROC ( CITIES ) не використовується нігде не знайдено
+PERSON_SERVICES_SEL_PROC ( CITIES ) не використовується нігде не знайдено є нова функція TRIP_PERSON_SERVICES_SEL_PROC
+PERSRESORT_SEL2_PROC ( CITIES ) не використовується нігде не знайдено
+PERSRESORT_SEL_PROC ( CITIES ) використовуєтсься \Modules\Resort\DataMod.dfm;\_OldVersion\New\DataMod.dfm;\Algol_Source (Dima)\New\DataMod.dfm;
+PERS_POSSIBLE_EMBASSY_PROC ( CITIES, PROVINCES ) 
+PLACEBYORDER_SEL_PROC ( CITIES )   використовуэться \Modules\TripNew\DataMod.dfm;
+PLACEBYTRIP_SEL1_PROC ( CITIES )  Є нова функція PLACEBYTRIP_SEL_PROC але стара викристовується в 4 процедурах (Перевірити) 
+PLACEBYTRIP_SEL_PROC ( CITIES ) 
+PLACELIST_SEL_PROC ( CITIES, TMUSERS )  \Algol_Source (Dima)\New\PlcRepFrm.dfm;\Algol_Source (Dima)\New\PlcRepIBFrm.dfm;
+PLACERETURN_SEL_PROC ( CITIES ) знайдено в \Modules\TripNew\TripAnlzExFrm.dfm;\_OldVersion\TripNew_20170822\TripAnlzExFrm.dfm;
+PLACE_N_ROOM_SEL1_PROC ( CITIES ) знайдено в \Modules\TripNew\DataMod.dfm; (CostDetQry: TIBQuery) але є нова Процедура PLACE_N_ROOM_SEL_PROC
+PLACE_N_ROOM_SEL_PROC ( CITIES ) 
+PROVINCES_SEL_PROC ( CITIES, PROVINCES ) не використов в новій версії (старі довідники)
+RESORTS_SEL_PROC ( CITIES, OBJECTLINKS ) не використов в новій версії (старі довідники)
+ROOMING_BYORDER_SEL_PROC ( TMUSERS ) 
+ROOMING_SEL_FROM_PROC ( CITIES, TMUSERS )  знайдено  \Modules\Room\RoomSql.pas;
+ROOMING_SEL_INTO_PROC ( CITIES, TMUSERS ) знайдено  \Modules\Room\RoomSql.pas;
+ROOMING_SEL_NEW_PROC ( CITIES, TMUSERS ) знайдено \Modules\Room\DataMod.dfm;
+ROOMING_SEL_PROC1 ( TMUSERS ) не використовується нігде не знайдено
+ROOMING_SEL_PROC2 ( TMUSERS ) знайдено в \New\tmp\ZTrpChrtFrm.dfm; більше нема
+ROOMING_SEL_TILL_PROC ( CITIES, TMUSERS ) знайдено в \Modules\Room\RoomSql.pas;
+ROUTE_SEL_PROC ( CITIES ) 
+SEL_ALLSALES_ORDER_PROC ( TOURVARIANTS ) 
+SEL_CLIENT_REPORT_PROC ( TOURVARIANTS )  знайдено в \Modules\OrderBr_AND\ClientRepFrm.dfm
+SEL_CNTRYTOURS_PROC ( TMUSERS ) 
+SEL_COMPANIES_PROC ( COMPWEBSITES, TYPENOTE )    не використов є нова процедура _NEW
+SEL_COMPANIES_PROC_NEW ( COMPWEBSITES, TYPENOTE ) 
+SEL_COMPANY_NOTE_PROC ( TYPENOTE )   не використов в новій версії (старі довідники)
+SEL_FREEROOM_PROC ( CITIES ) знайдено в \Modules\Room\DataMod.dfm;
+SEL_LASTCOMPNOTES_PROC ( TMUSERS, COMPEMAILS, COMPWEBSITES, TYPENOTE )  знайдено  \Web\ExprtInform\DataMod.dfm
+SEL_PAYDETAIL_BYCLIENT_PROC ( TMUSERS ) знайдено в \Modules\OrderBr_AND\ClientRepFrm.pas
+SEL_SERVCOST_PAYDETAIL_PROC ( TMUSERS ) знайдено в \Modules\Tours\GrpPayRepNew.dfm;\Modules\Tours_new\GrpPayRepNew.dfm;
+SEL_TOURS_PROC ( TMUSERS ) 
+SEL_TOURS_TREE_PROC ( TMUSERS, TOURNAMES ) знайдено \Masters\MTours_Oleh\DataMod.pas  (я не використовую такої функції в новому ТурМасті !)
+SET_TR_PERIOD_PROC ( TR_RATES )   не використовується нігде не знайдено
+SHEDULEITEMS_SEL_PROC ( CITIES ) 
+TEST_VISAPERS_SEL_PROC ( CITIES, ADDRESS )   не використовується нігде не знайдено
+TOURBONUS_CLIENT_SEL_PROC ( CITIES, COMPEMAILS, COMPPHONES )   знайдено в \Modules\Tours\ClientRepFrm.pas;\Modules\Tours_new\ClientRepFrm.pas;
+TOURCOUNTRY_CLIENT_SEL_PROC ( CITIES, COMPEMAILS, COMPPHONES )  знайдено в \Modules\Tours\ClientRepFrm.pas;\Modules\Tours_new\ClientRepFrm.pas;
+TOURGRAT_CLIENT_SEL_PROC ( CITIES, COMPEMAILS, COMPPHONES ) знайдено в \Modules\Tours\ClientRepFrm.pas;\Modules\Tours_new\ClientRepFrm.pas;
+TOURGROUPS_SEL_PROC ( TOURVARIANTS ) знайдено в \Modules\Insure\InsData.dfm;\Modules\Insure_db\InsData.dfm;\Modules\Order\TourSelDlg.dfm;\Order\tmp\TourSelDlg.dfm;\Modules\OrderBr_AND\QueEdFrm.dfm;
+TOURGROUP_CLIENT_SEL_PROC ( CITIES, COMPEMAILS, COMPPHONES ) знайдено в \Modules\Tours\ClientRepFrm.pas;\Modules\Tours\ClntCityRepFrm.pas;\Modules\Tours_new\ClientRepFrm.pas;\Modules\Tours_new\ClntCityRepFrm.pas;
+TOURINTEREST_SEL_PROC ( CITIES )  знайдено в \Modules\Tours\DataMod.dfm;\Modules\Tours_new\DataMod.dfm;\_OldVersion\Tours_20181220\DataMod.dfm;\Web\ExprtInform\DataMod.dfm;\Modules\Tours\TourInterestForm.pas;\Modules\Tours_new\TourInterestForm.pas;\_OldVersion\Tours_20181220\TourInterestForm.pas;\Web\ExprtInform\DataMod.pas;
+TOUR_CLIENT_SEL_PROC ( CITIES, COMPEMAILS, COMPPHONES )  знайдено в \Modules\Tours\ClientRepFrm.dfm;\Modules\Tours\ClntCityRepFrm.dfm;\Modules\Tours_new\ClientRepFrm.dfm;\Modules\Tours_new\ClntCityRepFrm.dfm;
+TOUR_CLIENT_STAT_SEL_PROC ( CITIES ) знайдено в \Modules\Tours\ClntStatFrm.dfm;\Modules\Tours_new\ClntStatFrm.dfm;
+TOUR_FIND_SEL_PROC ( TMUSERS )  знайдено в \Modules\OrderBr_AND\TrstFindDlg.dfm;\Modules\Search\SrchDlg.dfm;\Modules\Tours\FindDlg.dfm;\Modules\Tours_new\FindDlg.dfm;
+TOUR_ORDERBYMANAGER_PROC ( TOURVARIANTS )  знайдено в \Modules\Tours\TourSttRepFrm.dfm;\Modules\Tours_new\TourSttRepFrm.dfm;\_OldVersion\Tours_20181220\TourSttRepFrm.dfm;\Modules\Tours\TourSttRepFrm.pas;\Modules\Tours_new\TourSttRepFrm.pas;\_OldVersion\Tours_20181220\TourSttRepFrm.pas;
+TOUR_OTHERSERVICE_SEL_PROC ( COMPPHONES )  не використовується нігде не знайдено
+TOUR_PERSONEX_SEL_PROC ( CITIES ) знайдено в \Modules\Tours\DataMod.dfm;\Modules\Tours_new\DataMod.dfm;\_OldVersion\Tours_20181220\DataMod.dfm;
+TOUR_PERSONPAY_SEL_PROC ( CITIES ) знайдено в \Modules\Tours\DataMod.dfm;\Modules\Tours\GrpPaySrvFrm.dfm;\Modules\Tours_new\DataMod.dfm;\Modules\Tours_new\GrpPaySrvFrm.dfm;
+TOUR_PERSON_SEL_NEW_PROC ( CITIES, ADDRESS )  знайдено в \Modules\Tours\DataMod.dfm;\Modules\Tours_new\DataMod.dfm;\_OldVersion\Tours_20181220\DataMod.dfm;\Modules\Tours\DataMod.pas;\Modules\Tours_new\DataMod.pas; 
+TOUR_PERSON_SEL_PROC ( CITIES, ADDRESS )  знайдено в \Modules\Tours\DataMod.dfm;\Modules\Tours_new\DataMod.dfm;
+TOWNSHIPS_SEL_PROC ( CITIES, PROVINCES, TOWNSHIPS )  не використов в новій версії (старі довідники)
+TRIPBYDATE_SEL_PROC ( CITIES )   знайдено в \Modules\TripNew\TripSql.pas;
+TRIPBYGROUP_SEL_PROC ( CITIES )  знайдено в  \Modules\TripNew\TripSql.pas; 
+TRIPBYORDER_SEL_PROC ( CITIES )  знайдено в  \Modules\TripNew\TripSql.pas;
+TRIP_FIND_SEL_PROC ( CITIES, TMUSERS )  знайдено в  \Modules\TripNew\TourstFndDlg.dfm;\_OldVersion\TripNew_20170822\TourstFndDlg.dfm;\Modules\TripNew\TourstFndDlg.pas;
+TRIP_LIST_PROC ( CITIES )  знайдено в \Masters\Market\TripChrtFrm.dfm;\_OldVersion\New\DataMod.dfm;\_OldVersion\New\TripChrtFrm.dfm;\Algol_Source (Dima)\New\DataMod.dfm;\Algol_Source (Dima)\New\TripChrtFrm.dfm; 
+TRIP_PERSON_ADDRESS_SEL_PROC ( CITIES, PROVINCES, TOWNSHIPS )   знайдено в \Modules\TripNew\DataMod.dfm;\_OldVersion\TripNew_20170822\DataMod.dfm;
+TRIP_PERSON_SHIPLIST_SEL_PROC ( CITIES )   знайдено в \Modules\TripNew\DataMod.dfm;\_OldVersion\TripNew_20170822\DataMod.dfm;\Modules\TripNew\InsrVwFrm.pas;\_OldVersion\TripNew_20170822\InsrVwFrm.pas;
+TRIP_SEL_PROC ( CITIES )  знайдено в \Modules\Order\DataMod.dfm;\Order\Old\DataMod.dfm;\Modules\Tours\ServiceControlFrm.dfm;\Modules\TripNew\DataMod.dfm;\Modules\TripNew\DataMod_IB.dfm;
+TR_RATE_COPY_PROC ( TR_RATES ) 
+TR_RATE_SEL_PROC ( TR_RATES ) 
+TR_TOURRATES_PROC ( TR_RATES )     не використовується нігде не знайдено
+VENDOR_ORDER_SEL_PROC ( TMUSERS )  не використовується нігде не знайдено
+VISAANKET_SEL_PROC ( CITIES, COMPEMAILS, COMPPHONES )  знайдено в \Modules\TourVisa\VisaMod.dfm;\TourVisa\oldPersDoc\VisaMod.dfm;
+VISAGROUPS_CNTR_SEL_PROC ( TOURVARIANTS )    знайдено в \Modules\TourVisa\VisaMod.dfm;\TourVisa\oldPersDoc\VisaMod.dfm;
+VISAGROUPS_SEL_PROC ( TOURVARIANTS )    знайдено в \Modules\TourVisa\VisaMod.dfm;\TourVisa\oldPersDoc\VisaMod.dfm;
+VISAPERSON_BY_SEL_PROC ( CITIES )   знайдено в \Modules\TourVisa\VisaMod.dfm;\TourVisa\oldPersDoc\VisaMod.dfm;
+VISAPERSON_SEL_PROC ( TMUSERS )  знайдено в \Modules\TourVisa\DocVwFrm.dfm;\_OldVersion\TourVisa_20171117\DocVwFrm.dfm;\Modules\TourVisa\DocVwFrm.pas;
+VISAPERSON_SEL_PROC1 ( TMUSERS )   не використовується нігде не знайдено
+VISAPERSREP_SEL_PROC ( COMPPHONES )   знайдено в \Modules\TourVisa\PrsnVwFrm.dfm;\_OldVersion\TourVisa_20171117\PrsnVwFrm.dfm;\Modules\TourVisa\PrsnVwFrm.pas;\_OldVersion\TourVisa_20171117\PrsnVwFrm.pas;
+VISAPERS_BY_SEL_PROC_NEW ( CITIES, ADDRESS )  знайдено в \Modules\TourVisa\VisaMod.dfm;\TourVisa\oldPersDoc\VisaMod.dfm;
+VISA_FIND_SEL_PROC ( TMUSERS )  знайдено в \Algol_Source (Dima)\LIntf\TrstFndDlg.dfm;\Modules\Common\TrstFndDlg.dfm;\Common\old\TrstFndDlg.dfm;\Insure\FindNew\TrstFndDlg.dfm;\Insure_db\FindNew\TrstFndDlg.dfm;\Modules\TourVisa\FindDlg.dfm;\Insure_20141002\FindNew\TrstFndDlg.dfm;\_OldVersion\LIntf\TrstFndDlg.dfm;\_OldVersion\TourVisa_20171117\FindDlg.dfm;\Modules\TourVisa\FindDlg.pas;\_OldVersion\TourVisa_20171117\FindDlg.pas;

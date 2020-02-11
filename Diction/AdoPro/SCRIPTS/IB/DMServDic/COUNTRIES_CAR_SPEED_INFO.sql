@@ -1,0 +1,2 @@
+select * from COUNTRIES_CAR_SPEED_INFO
+where ID_COUNTRY = :COUNTRYID

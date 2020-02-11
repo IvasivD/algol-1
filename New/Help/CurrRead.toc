@@ -1,0 +1,7 @@
+:Base CurrRead
+:Title Курси валют
+1 Вступ=CurrencyBrowse
+1 Таблиця статистики курсу грошової одиниці=CurrencyDetail
+1 Графік зміни курсу грошової одиниці=CurrencyChart
+1 Імпорт інформації від банку=CurrencyImport
+1 Курси валют на дату=CurrencyAtDate

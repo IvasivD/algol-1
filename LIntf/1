@@ -1,0 +1,90 @@
+Comparing files \\GNOME\D$\DEVELOPMENT\DELPHI\SOFTWARE\ALGOL_SOURCE\LINTF\TourConsts.pas and TOURCONSTS.PAS
+***** \\GNOME\D$\DEVELOPMENT\DELPHI\SOFTWARE\ALGOL_SOURCE\LINTF\TourConsts.pas
+  SVDlgsDocToCustomersSendEmailPass ='{img:2} Замовникам будуть надіслані листи про подачу на візи документів туристів.';
+  STourManErrorDeleteTemplate = 'Не можна видалити шаблон, що застосовувався до туристів. '#13 +
+    'Щоб перевірити, чи можна видалити шаблон, потрібно: '#13 +
+    '- відмітити чек-бокс "Групи по шаблону" '#13 +
+    '- зняти фільтр по даті. '#13 +
+    'Якщо груп по шаблону немає, шаблон можна видалити.';
+   STourManWarningDisableService = 'Ви справді хочете заборонити послугу'#13'"%s"'#13'з шаблону туру %s?';
+  //****************************************************************************
+***** TOURCONSTS.PAS
+  SVDlgsDocToCustomersSendEmailPass ='{img:2} Замовникам будуть надіслані листи про подачу на візи документів туристів.';
+  
+  //****************************************************************************
+*****
+
+***** \\GNOME\D$\DEVELOPMENT\DELPHI\SOFTWARE\ALGOL_SOURCE\LINTF\TourConsts.pas
+  SZTDlgErrNetValLessZero = 'Ціна нетто не може бути меншою від нуля.';
+  SZTDlgErrRateIsNull = 'Вартість не може бути не вказана.'#13'Якщо вартість послуги дорівнює нулю, тоді вкажіть 0 у відповідні
+й валюті.';
+  SZTDlgErrRateLessZero = 'Вартість не може бути меншою від нуля.';
+***** TOURCONSTS.PAS
+  SZTDlgErrNetValLessZero = 'Ціна нетто не може бути меншою від нуля.';
+  SZTDlgErrRateIsNull = 'На цій закладці не вказано вартість!'#13'Якщо вартість послуги дорівнює нулю, тоді вкажіть "0" у відпо
+відній валюті.';
+  SZTDlgErrRateLessZero = 'Вартість не може бути меншою від нуля.';
+*****
+
+***** \\GNOME\D$\DEVELOPMENT\DELPHI\SOFTWARE\ALGOL_SOURCE\LINTF\TourConsts.pas
+  SZTDlgErrPayLessDebt = 'До оплати не може бути менше, ніж вказано у виставленому рахунку.';
+  SZTDlgErrAgentPayIsZero = 'Агентська винагорода не може бути меншою від нуля.';
+  SZTDlgErrGrpRateIsNull = 'Ціна на групу повинна бути вказана.';
+***** TOURCONSTS.PAS
+  SZTDlgErrPayLessDebt = 'До оплати не може бути менше, ніж вказано у виставленому рахунку.';
+  SZTDlgErrGrpRateIsNull = 'Ціна на групу повинна бути вказана.';
+*****
+
+***** \\GNOME\D$\DEVELOPMENT\DELPHI\SOFTWARE\ALGOL_SOURCE\LINTF\TourConsts.pas
+  SZTDlgErrAgentPayIsMore = 'Агентська винагорода не може бути більшою від вартості.';
+  SZTDlgErrManagerIsNull = 'Виберіть відповідального менеджера!';
+***** TOURCONSTS.PAS
+  SZTDlgErrAgentPayIsMore = 'Агентська винагорода не може бути більшою від вартості.';
+  SZTDlgErrAgentPayIsZero = 'Агентська винагорода не може бути меншою від нуля.';
+  SZTDlgErrManagerIsNull = 'Виберіть відповідального менеджера!';
+*****
+
+***** \\GNOME\D$\DEVELOPMENT\DELPHI\SOFTWARE\ALGOL_SOURCE\LINTF\TourConsts.pas
+  SZTDlgErrPromoFromDateIsNull = 'Поле "З дати" має бути вказане.';
+  SZTDlgErrPromoFromDateLesNow = 'Початок акції не може бути менший за зараз.';
+  SZTDlgErrPromoTillDateIsNull = 'Поле "По дату" має бути вказане.';
+  SZTDlgErrPromoFromDateLesTillDate = 'Кінець акції не може бути менший за початок.';
+***** TOURCONSTS.PAS
+  SZTDlgErrPromoFromDateIsNull = 'Поле "З дати" має бути вказане.';
+  SZTDlgErrPromoFromDateLesNow = 'Початок акції не може бути менший за "зараз".';
+  SZTDlgErrPromoTillDateIsNull = 'Не вказано дату закінчення акції!';//'Поле "По дату" має бути вказане.';
+  SZTDlgErrPromoFromDateLesTillDate = 'Кінець акції не може бути менший за початок.';
+*****
+
+***** \\GNOME\D$\DEVELOPMENT\DELPHI\SOFTWARE\ALGOL_SOURCE\LINTF\TourConsts.pas
+  SBillUnBillingMessageTimeout = 'При неоплаті у вказаний термін постачальник має право анулювати замовлення.';
+  SBillUnBillingMessageTimeout2 = 'Оплата від платника іншого, ніж %s, не буде зарахована в оплату замовлення. Така оплата буде
+ повернена на рахунок платника, з якого вона була здійснена, після отримання заяви на повернення помилково перерахованих коштів
+.';
+  SPayRetDlg5 = 'До поверн.';
+***** TOURCONSTS.PAS
+  SBillUnBillingMessageTimeout = 'При неоплаті у вказаний термін постачальник має право анулювати замовлення.';
+  SBillUnBillingMessageTimeout1 = 'В платіжному дорученні потрібно обов''язково вказати номер рахунку! Оплата платіжним длоруче
+нням без номеру рахунку не буде зарахована.';
+  SBillUnBillingMessageTimeout2 = ' Оплата від платника іншого, ніж %s, не буде зарахована в оплату замовлення. Така оплата буд
+е повернена на рахунок платника, з якого вона була здійснена, після отримання заяви на повернення помилково перерахованих кошті
+в.';
+  SPayRetDlg5 = 'До поверн.';
+*****
+
+***** \\GNOME\D$\DEVELOPMENT\DELPHI\SOFTWARE\ALGOL_SOURCE\LINTF\TourConsts.pas
+  STourManWarningDeleteTemplate = 'Ви справді хочете видалити шаблон'#13'"%s"'#13'для туру %s?';
+  STourManWarningDeleteService = 'Ви справді хочете видалити послугу'#13'"%s"'#13'з шаблону туру %s?';
+  STourManErrorPasteSource = 'Буфер обміну не містить шаблону туру.';
+***** TOURCONSTS.PAS
+  STourManWarningDeleteTemplate = 'Ви справді хочете видалити шаблон'#13'"%s"'#13'для туру %s?';
+  STourManErrorDeleteTemplate = 'Не можна видалити шаблон, що застосовувався до туристів. '#13 +
+    'Щоб перевірити, чи можна видалити шаблон, потрібно: '#13 +
+    '- відмітити чек-бокс "Групи по шаблону" '#13 +
+    '- зняти фільтр по даті. '#13 +
+    'Якщо груп по шаблону немає, шаблон можна видалити.';
+  STourManWarningDeleteService = 'Ви справді хочете видалити послугу'#13'"%s"'#13'з шаблону туру %s?';
+  STourManWarningDisableService = 'Ви справді хочете заборонити послугу'#13'"%s"'#13'з шаблону туру %s?';
+  STourManErrorPasteSource = 'Буфер обміну не містить шаблону туру.';
+*****
+
